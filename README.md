@@ -30,8 +30,6 @@
 | 微信公众号| ![](https://img-1253984064.cos.ap-guangzhou.myqcloud.com/future-sec-qrcode.jpg)|
 | 微信交流群| ![](https://img-1253984064.cos.ap-guangzhou.myqcloud.com/wechat.jpg)|
 
-
-
 ## 参与
 
 物联网安全随着技术的不断革新，是一个需要持续创新和学习的领域，也是一个涉及多学科、多门类的研究方向，单个的力量终究是有限的，此希望有志于此的读者能跟我们积极分享自己独到的观点和见解，此开源图书项目，编者笔力尚拙，难免多生谬误，希望各位多提宝贵意见和建议，欢迎大家[参与项目](https://github.com/yaseng/iot-security-wiki)。
