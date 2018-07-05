@@ -28,7 +28,7 @@
 | 邮箱 | info@iot-security.wiki |
 | qq 交流群|  306482276 |
 | 微信公众号| ![](https://img-1253984064.cos.ap-guangzhou.myqcloud.com/future-sec-qrcode.jpg)|
-| 微信交流群| ![](https://img-1253984064.cos.ap-guangzhou.myqcloud.com/wechat1.jpg)|
+| 微信交流群| ![](https://img-1253984064.cos.ap-guangzhou.myqcloud.com/wechat.jpg)|
 
 ## 参与
 
