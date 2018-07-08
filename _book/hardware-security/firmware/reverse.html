@@ -1,0 +1,883 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.3.2 固件逆向 · 物联网安全百科</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Yaseng">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../protocol/" />
+    
+    
+    <link rel="prev" href="extraction.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../../_assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../_assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../_assets/images/favicon.ico'>
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://iot-security.wiki" target="_blank" class="custom-link">物联网安全百科</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../basics/">
+            
+                <a href="../../basics/">
+            
+                    
+                    1. 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../basics/iot.html">
+            
+                <a href="../../basics/iot.html">
+            
+                    
+                    1.1 物联网介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    2. 硬件安全
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../introduction.html">
+            
+                <a href="../introduction.html">
+            
+                    
+                    2.1 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../hardware/">
+            
+                <a href="../hardware/">
+            
+                    
+                    2.2 硬件分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../hardware/preliminary.html">
+            
+                <a href="../hardware/preliminary.html">
+            
+                    
+                    2.2.1 初探
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../hardware/circuit.html">
+            
+                <a href="../hardware/circuit.html">
+            
+                    
+                    2.2.2 电路分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    2.3 固件分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="extraction.html">
+            
+                <a href="extraction.html">
+            
+                    
+                    2.3.1 固件提取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3.2" data-path="reverse.html">
+            
+                <a href="reverse.html">
+            
+                    
+                    2.3.2 固件逆向
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../protocol/">
+            
+                <a href="../protocol/">
+            
+                    
+                    2.4 协议分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../protocol/network.html">
+            
+                <a href="../protocol/network.html">
+            
+                    
+                    2.4.1 网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../protocol/USB.html">
+            
+                <a href="../protocol/USB.html">
+            
+                    
+                    2.4.2 USB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../protocol/others.html">
+            
+                <a href="../protocol/others.html">
+            
+                    
+                    2.4.3 其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../debug/">
+            
+                <a href="../debug/">
+            
+                    
+                    2.5 硬件调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../debug/serial-port.html">
+            
+                <a href="../debug/serial-port.html">
+            
+                    
+                    2.5.1 串口调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../debug/jtag.html">
+            
+                <a href="../debug/jtag.html">
+            
+                    
+                    2.5.2 JTAG调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../debug/remote.html">
+            
+                <a href="../debug/remote.html">
+            
+                    
+                    2.5.3 远程调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../modification/">
+            
+                <a href="../modification/">
+            
+                    
+                    2.6 硬件修改
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../modification/hardware.html">
+            
+                <a href="../modification/hardware.html">
+            
+                    
+                    2.6.1 硬改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../modification/firmware.html">
+            
+                <a href="../modification/firmware.html">
+            
+                    
+                    2.6.2 软改
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../vulnerability/">
+            
+                <a href="../vulnerability/">
+            
+                    
+                    2.7 漏洞挖掘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../protection/">
+            
+                <a href="../protection/">
+            
+                    
+                    2.8 安全防护
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../cases/">
+            
+                <a href="../cases/">
+            
+                    
+                    2.9 综合案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../radio-security/">
+            
+                <a href="../../radio-security/">
+            
+                    
+                    3.无线电安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../chip-security/">
+            
+                <a href="../../chip-security/">
+            
+                    
+                    4.芯片安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../lock-security/">
+            
+                <a href="../../lock-security/">
+            
+                    
+                    5.锁具安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../physicals-security/">
+            
+                <a href="../../physicals-security/">
+            
+                    
+                    6.物理安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../appendix/">
+            
+                <a href="../../appendix/">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >2.3.2 固件逆向</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x56FA;&#x4EF6;&#x9006;&#x5411;">&#x56FA;&#x4EF6;&#x9006;&#x5411;</h1>
+<h2 id="&#x524D;&#x8A00;">&#x524D;&#x8A00;</h2>
+<p>&#x5BF9;&#x56FA;&#x4EF6;&#x7684;&#x4E00;&#x4E9B;&#x9006;&#x5411;&#x601D;&#x8DEF;&#xFF0C;&#x901A;&#x8FC7;&#x51E0;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x6848;&#x4F8B;&#x3002;</p>
+<h2 id="&#x5355;&#x7247;&#x673A;">&#x5355;&#x7247;&#x673A;</h2>
+<p>&#x76F8;&#x5BF9;&#x4E8E;&#x5D4C;&#x5165;&#x5F0F;&#x8BBE;&#x5907;&#x7684;&#x9006;&#x5411;&#xFF0C;&#x5355;&#x7247;&#x673A;&#x7684;&#x9006;&#x5411;&#x7EAF;&#x5C5E;&#x4E8E;&#x4F53;&#x529B;&#x6D3B;&#xFF0C;&#x9700;&#x8981;&#x6839;&#x636E;&#x82AF;&#x7247;&#x5B9A;&#x4E49;&#x7684;&#x6BCF;&#x4E2A; IO &#x53E3;&#xFF0C;&#x914D;&#x5408;&#x7535;&#x8DEF;&#x548C;&#x5916;&#x90E8;&#x6A21;&#x5757;&#x8FDB;&#x884C;&#x5206;&#x6790;&#x3001;&#x8C03;&#x8BD5;&#x3002;&#x9010;&#x6B65;&#x786E;&#x5B9A;&#x6BCF;&#x4E00;&#x4E2A;&#x5206;&#x652F;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x903B;&#x8F91;&#x7B49;&#xFF0C;&#x662F;&#x975E;&#x5E38;&#x7E41;&#x7410;&#x548C;&#x590D;&#x6742;&#x7684;&#x5DE5;&#x4F5C;&#x3002;
+&#x8FD9;&#x91CC;&#x4F7F;&#x7528; MSP430 &#x7CFB;&#x5217;&#x82AF;&#x7247;&#x4F5C;&#x4E3A;&#x9006;&#x5411;&#x5206;&#x6790;&#x7684;&#x6848;&#x4F8B;&#xFF0C;&#x5176;&#x4ED6;&#x7684;&#x5355;&#x7247;&#x673A;&#x4E5F;&#x7C7B;&#x4F3C;&#x3002;</p>
+<h3 id="&#x57FA;&#x7840;&#x77E5;&#x8BC6;">&#x57FA;&#x7840;&#x77E5;&#x8BC6;</h3>
+<h4 id="msp430-&#x5F00;&#x53D1;&#x57FA;&#x7840;">MSP430 &#x5F00;&#x53D1;&#x57FA;&#x7840;</h4>
+<p>Know it then hack it &#xFF0C;&#x5728;&#x5BF9;&#x4E00;&#x4E2A;&#x5355;&#x7247;&#x673A;&#x82AF;&#x7247;&#x505A;&#x9006;&#x5411;&#x5206;&#x6790;&#x4EE5;&#x53CA;&#x6F0F;&#x6D1E;&#x6316;&#x6398;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x719F;&#x6089;&#x5355;&#x7247;&#x673A;&#x5F00;&#x53D1;&#x548C;&#x5E95;&#x5C42;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#xFF0C;&#x4EE5; MSP430G2553 &#x4E3A;&#x4F8B;&#xFF0C;&#x7B80;&#x5355;&#x4ECB;&#x7ECD;&#x4E0B;&#x6709;&#x5173;&#x5355;&#x7247;&#x673A;&#x5F00;&#x53D1;&#x7684;&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#x3002;</p>
+<h5 id="&#x82AF;&#x7247;&#x7279;&#x6027;">&#x82AF;&#x7247;&#x7279;&#x6027;</h5>
+<p>&#x5FB7;&#x5DDE;&#x4EEA;&#x5668;  (TI) MSP430G2x13 &#x548C; MSP430G2x53 &#x7CFB;&#x5217;&#x662F;&#x8D85;&#x4F4E;&#x529F;&#x8017;&#x6DF7;&#x5408;&#x4FE1;&#x53F7;&#x5FAE;&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x5177;&#x6709;&#x5185;&#x7F6E;&#x7684; 16 &#x4F4D;&#x5B9A;&#x65F6;&#x5668;&#x3001;&#x591A;&#x8FBE; 24 &#x4E2A;&#x652F;&#x6301;&#x89E6;&#x6478;&#x611F;&#x6D4B;&#x7684; I/O &#x5F15;&#x811A;&#x3001;&#x4E00;&#x4E2A;&#x901A;&#x7528;&#x578B;&#x6A21;&#x62DF;&#x6BD4;&#x8F83;&#x5668;&#x4EE5;&#x53CA;&#x91C7;&#x7528;&#x901A;&#x7528;&#x4E32;&#x884C;&#x901A;&#x4FE1;&#x63A5;&#x53E3;&#x7684;&#x5185;&#x7F6E;&#x901A;&#x4FE1;&#x80FD;&#x529B;&#x3002; &#x6B64;&#x5916;&#xFF0C;MSP430G2x53 &#x7CFB;&#x5217;&#x6210;&#x5458;&#x8FD8;&#x5177;&#x6709;&#x4E00;&#x4E2A; 10 &#x4F4D;&#x6A21;&#x6570; (A/D) &#x8F6C;&#x6362;&#x5668;&#x3002; &#x5178;&#x578B;&#x5E94;&#x7528;&#x5305;&#x62EC;&#x4F4E;&#x6210;&#x672C;&#x4F20;&#x611F;&#x5668;&#x7CFB;&#x7EDF;&#xFF0C;&#x6B64;&#x7C7B;&#x7CFB;&#x7EDF;&#x8D1F;&#x8D23;&#x6355;&#x83B7;&#x6A21;&#x62DF;&#x4FE1;&#x53F7;&#x3001;&#x5C06;&#x4E4B;&#x8F6C;&#x6362;&#x4E3A;&#x6570;&#x5B57;&#x503C;&#x3001;&#x968F;&#x540E;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x4EE5;&#x8FDB;&#x884C;&#x663E;&#x793A;&#x6216;&#x4F20;&#x9001;&#x81F3;&#x4E3B;&#x673A;&#x7CFB;&#x7EDF;&#x3002;</p>
+<h5 id="&#x7A0B;&#x5E8F;&#x57FA;&#x7840;">&#x7A0B;&#x5E8F;&#x57FA;&#x7840;</h5>
+<p>MSP430 &#x5355;&#x7247;&#x673A;&#x7684;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6C47;&#x7F16;&#x8BED;&#x8A00;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; c &#x8BED;&#x8A00; &#xFF0C;&#x65E0;&#x8BBA;&#x6C47;&#x7F16;&#x8FD8;&#x662F; c &#x8BED;&#x8A00;&#xFF0C;&#x90FD;&#x9700;&#x8981;&#x638C;&#x63E1; MSP430 &#x5FAE;&#x5904;&#x7406;&#x5668;&#x7684;&#x7ED3;&#x6784;&#x3001;&#x539F;&#x7406;&#x3001;&#x63A5;&#x53E3;&#x7B49;&#x624D;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x8F6F;&#x4EF6;&#x4E0E;&#x786C;&#x4EF6;&#x7684;&#x8BBE;&#x8BA1;&#x3002;
+MSP430  &#x7CFB;&#x5217;&#x91C7;&#x7528;&#x7684;&#x662F;&#x201C;&#x51AF;-&#x8BFA;&#x4F9D;&#x66FC;&#x201D;&#x7ED3;&#x6784;&#xFF0C;ROM&#x3001;RAM &#x5728;&#x540C;&#x4E00;&#x5730;&#x5740;&#x7A7A;&#x95F4;&#xFF0C;&#x4F7F;&#x7528;&#x4E00;&#x7EC4;&#x5730;&#x5740;&#x6570;&#x636E;&#x603B;&#x7EBF;&#x3002;&#x4E2D;&#x592E;&#x5904;&#x7406;&#x5355;&#x5143;&#x91C7;&#x7528;&#x4E86;&#x7CBE;&#x7B80;&#x7684;&#x3001;&#x9AD8;&#x900F;&#x660E;&#x7684;&#x3001;&#x9AD8;&#x6548;&#x7387;&#x7684;&#x6B63;&#x4EA4;&#x8BBE;&#x8BA1;&#xFF0C;&#x5B83;&#x5305;&#x62EC;&#x4E00;&#x4E2A; 16 &#x4F4D; ALU&#xFF08;&#x7B97;&#x672F;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x5355;&#x5143;&#xFF09;&#xFF0C;16 &#x4E2A;&#x5BC4;&#x5B58;&#x5668;&#xFF0C;&#x4E00;&#x4E2A;&#x6307;&#x4EE4;&#x63A7;&#x5236;&#x5355;&#x5143;&#xFF0C;16 &#x4E2A;&#x5BC4;&#x5B58;&#x5668;&#x4E2D;&#x6709; 4 &#x4E2A;&#x4E3A;&#x7279;&#x6B8A;&#x7528;&#x9014;&#xFF0C;&#x626E;&#x6F14;&#x91CD;&#x8981;&#x89D2;&#x8272;&#xFF0C;&#x5206;&#x522B;&#x662F;&#xFF1A;&#x7A0B;&#x5E8F;&#x8BA1;&#x6570;&#x5668;&#x3001;&#x5806;&#x6808;&#x6307;&#x9488;&#x3001;&#x72B6;&#x6001;&#x5BC4;&#x5B58;&#x5668;&#x3001;&#x5E38;&#x6570;&#x53D1;&#x751F;&#x5668;&#x3002;&#x7A0B;&#x5E8F;&#x6D41;&#x7A0B;&#x901A;&#x8FC7;&#x7A0B;&#x5E8F;&#x8BA1;&#x6570;&#x5668;&#x63A7;&#x5236;&#xFF0C;&#x800C;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x7684;&#x73B0;&#x573A;&#x72B6;&#x6001;&#x4F53;&#x73B0;&#x5728;&#x7A0B;&#x5E8F;&#x72B6;&#x6001;&#x5B57;&#x4E2D;&#x3002;</p>
+<h5 id="&#x5F00;&#x53D1;&#x73AF;&#x5883;">&#x5F00;&#x53D1;&#x73AF;&#x5883;</h5>
+<p>&#x5FB7;&#x5DDE;&#x4EEA;&#x5668;  (TI) &#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x514D;&#x8D39;&#x7248;&#x672C;&#x7684;&#x5F00;&#x53D1;&#x8F6F;&#x4EF6; CCS&#xFF0C;&#x91C7;&#x7528; eclipse+plugs+compiler &#x7684;&#x7EC4;&#x5408;&#x5F00;&#x53D1;&#x5E73;&#x53F0;&#xFF0C;
+CCS &#x5E73;&#x53F0;&#x81EA;&#x7531;&#x5EA6;&#x8F83;&#x9AD8;&#xFF0C;&#x53EF;&#x4EE5;&#x66F4;&#x4E86;&#x89E3;&#x82AF;&#x7247;&#x7684;&#x7EC6;&#x8282;&#x90E8;&#x5206;&#xFF0C;&#x6BD4;&#x5982;&#x542F;&#x52A8;&#x8FC7;&#x7A0B; cstart &#xFF0C;&#x4E2D;&#x65AD;&#x7684;&#x8DF3;&#x8F6C;&#x65B9;&#x5F0F;&#xFF0C;&#x5982;&#x4F55;&#x628A;&#x4E2D;&#x65AD;&#x5411;&#x91CF;&#x8868;&#x653E;&#x7F6E;&#x5230; RAM &#x4E2D;&#xFF0C;&#x5982;&#x4F55;&#x628A;&#x51FD;&#x6570;&#x62F7;&#x8D1D;&#x5230; RAM &#x4E2D;&#x6267;&#x884C;&#x7B49;&#x7B49;&#xFF0C;IAR Embedded Workbench &#x662F;&#x53E6;&#x4E00;&#x6B3E;&#x6536;&#x8D39;&#x7684;&#x4E13;&#x4E1A;&#x7684; IDE &#x5DE5;&#x5177;&#xFF0C;&#x96C6;&#x6210;&#x5EA6;&#x6BD4;&#x8F83;&#x9AD8;&#xFF0C;&#x4F7F;&#x7528;&#x5F88;&#x65B9;&#x4FBF;&#xFF0C;&#x63D0;&#x4F9B;&#x7ED9;&#x7528;&#x6237;&#x7684;&#x5F88;&#x591A;&#x7684;&#x53CB;&#x597D;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5BF9;&#x7A0B;&#x5E8F;&#x4E0B;&#x8F7D;&#x8C03;&#x8BD5;&#x652F;&#x6301;&#x66F4;&#x53CB;&#x597D;&#xFF0C;&#x76EE;&#x524D; IAR &#x5DF2;&#x7ECF;&#x66F4;&#x65B0;&#x81F3; 7.X &#x7248;&#x672C;&#xFF0C;&#x4F46;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528; 5.3 &#x6216; 5.6 &#x7248;&#x672C;&#xFF0C;&#x529F;&#x80FD;&#x66F4;&#x4E3A;&#x7A33;&#x5B9A;&#xFF0C;&#x8FD9;&#x91CC;&#x4F7F;&#x7528; IAR &#x4F5C;&#x4E3A;&#x5F00;&#x53D1;&#x8C03;&#x8BD5;&#x7684;&#x73AF;&#x5883;&#x3002;</p>
+<h5 id="&#x5DE5;&#x4F5C;&#x539F;&#x7406;">&#x5DE5;&#x4F5C;&#x539F;&#x7406;</h5>
+<p>&#x76EE;&#x524D;&#x5E02;&#x573A;&#x4E0A;&#x4F7F;&#x7528;&#x7684;&#x5355;&#x7247;&#x673A;&#x79CD;&#x7C7B;&#x7E41;&#x6742;&#xFF0C;&#x5305;&#x62EC; C51&#x3001;AVR&#x3001;MSP430&#x3001;STM32&#x3001;PIC &#x7B49;&#x7B49;&#xFF0C;&#x5176;&#x786C;&#x4EF6;&#x67B6;&#x6784;&#x867D;&#x4E0D;&#x5C3D;&#x76F8;&#x540C;&#xFF0C;&#x4F46;&#x57FA;&#x672C;&#x539F;&#x7406;&#x4E00;&#x81F4;&#xFF0C;&#x6700;&#x5C0F;&#x5355;&#x5143;&#x90FD;&#x662F; CMOS &#x7BA1;&#xFF0C;&#x901A;&#x8FC7;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#xFF0C;&#x64CD;&#x4F5C; IO &#x53E3;&#x8F93;&#x51FA;&#x4E0D;&#x540C;&#x6570;&#x5B57;&#x7535;&#x5E73;&#x4FE1;&#x53F7;&#xFF0C;&#x5B9E;&#x73B0;&#x5BF9;&#x5916;&#x90E8;&#x6A21;&#x5757;&#x7684;&#x63A7;&#x5236;&#x548C;&#x901A;&#x4FE1;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3c6b725a2d1.jpg" alt=""></p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3c6ecd492db.jpg" alt=""></p>
+<p>&#x5185;&#x90E8;&#x5927;&#x591A;&#x4F1A;&#x6709; CPU&#x3001;RAM&#x3001;ROM&#x3001;&#x65F6;&#x949F;&#x6676;&#x632F;&#x3001;&#x603B;&#x7EBF;&#x63A5;&#x53E3;&#x3001;&#x4E32;&#x884C;&#x63A5;&#x53E3;&#x3001;&#x5BC4;&#x5B58;&#x5668;&#x3001; ADC &#x7B49;&#x529F;&#x80FD;&#x6A21;&#x5757;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3c6ee9d3650.png" alt=""></p>
+<p>&#x5355;&#x7247;&#x673A;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x539F;&#x7406;&#x57FA;&#x672C;&#x4E00;&#x81F4;&#xFF0C;&#x5355;&#x7247;&#x673A;&#x81EA;&#x52A8;&#x5B8C;&#x6210;&#x8D4B;&#x4E88;&#x5B83;&#x7684;&#x4EFB;&#x52A1;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5355;&#x7247;&#x673A;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x5373;&#x4E00;&#x6761;&#x6761;&#x6267;&#x884C;&#x6307;&#x4EE4;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x6240;&#x8C13;&#x6307;&#x4EE4;&#x5C31;&#x662F;&#x628A;&#x8981;&#x6C42;&#x5355;&#x7247;&#x673A;&#x6267;&#x884C;&#x7684;&#x5404;&#x79CD;&#x64CD;&#x4F5C;&#x7528;&#x7684;&#x547D;&#x4EE4;&#x7684;&#x5F62;&#x5F0F;&#x5199;&#x4E0B;&#x6765;&#xFF0C;&#x8FD9;&#x4E00;&#x7CFB;&#x5217;&#x6307;&#x4EE4;&#x7684;&#x96C6;&#x5408;&#x5C31;&#x6210;&#x4E3A;&#x7A0B;&#x5E8F;&#xFF0C;&#x7A0B;&#x5E8F;&#x9700;&#x8981;&#x9884;&#x5148;&#x5B58;&#x653E;&#x5728;&#x5177;&#x6709;&#x5B58;&#x50A8;&#x529F;&#x80FD;&#x7684;&#x90E8;&#x4EF6;&#x2014;&#x2014;&#x5B58;&#x50A8;&#x5668;&#x4E2D;&#xFF0C;&#x70E7;&#x5199;&#x7A0B;&#x5E8F;&#x7684;&#x8FC7;&#x7A0B;&#x5C31;&#x662F;&#x628A;&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#x8F6C;&#x4E3A;&#x4E3A;&#x4E8C;&#x8FDB;&#x5236;&#xFF0C;&#x7136;&#x540E;&#x6839;&#x636E;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x503C;&#x4E0D;&#x540C;&#xFF0C;&#x8F6C;&#x4E3A;&#x9AD8;&#x4F4E;&#x7535;&#x5E73;&#x4FE1;&#x53F7;&#xFF0C;&#x6539;&#x53D8;&#x5B58;&#x50A8;&#x5668;&#x4E2D;&#x6676;&#x4F53;&#x7BA1;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x7A0B;&#x5E8F;&#x5C31;&#x88AB;&#x56FA;&#x5316;&#x5728;&#x4E86;&#x5B58;&#x50A8;&#x5668;&#x4E2D;&#x3002;&#x5B58;&#x50A8;&#x5668;&#x7531;&#x8BB8;&#x591A;&#x5B58;&#x50A8;&#x5355;&#x5143;&#xFF08;&#x57FA;&#x672C;&#x7ED3;&#x6784;&#x4E3A;&#x6D6E;&#x6805;&#x6676;&#x4F53;&#x7BA1;&#xFF09;&#x7EC4;&#x6210;&#xFF0C;&#x6307;&#x4EE4;&#x5C31;&#x5B58;&#x653E;&#x5728;&#x8FD9;&#x4E9B;&#x5355;&#x5143;&#x91CC;&#xFF0C;&#x5355;&#x5143;&#x91CC;&#x7684;&#x6307;&#x4EE4;&#x53D6;&#x51FA;&#x5E76;&#x6267;&#x884C;&#x5C31;&#x50CF;&#x5927;&#x697C;&#x623F;&#x7684;&#x6BCF;&#x4E2A;&#x623F;&#x95F4;&#x7684;&#x88AB;&#x5206;&#x914D;&#x5230;&#x4E86;&#x552F;&#x4E00;&#x4E00;&#x4E2A;&#x623F;&#x95F4;&#x53F7;&#x4E00;&#x6837;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x5B58;&#x50A8;&#x5355;&#x5143;&#x4E5F;&#x5FC5;&#x987B;&#x88AB;&#x5206;&#x914D;&#x5230;&#x552F;&#x4E00;&#x7684;&#x5730;&#x5740;&#x53F7;&#xFF0C;&#x8BE5;&#x5730;&#x5740;&#x53F7;&#x79F0;&#x4E3A;&#x5B58;&#x50A8;&#x5355;&#x5143;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x8FD9;&#x6837;&#x53EA;&#x8981;&#x77E5;&#x9053;&#x4E86;&#x5B58;&#x50A8;&#x5355;&#x5143;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#x8FD9;&#x4E2A;&#x5B58;&#x50A8;&#x5355;&#x5143;&#xFF0C;&#x5176;&#x4E2D;&#x5B58;&#x50A8;&#x7684;&#x6307;&#x4EE4;&#x5C31;&#x53EF;&#x4EE5;&#x88AB;&#x53D6;&#x51FA;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x88AB;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x5355;&#x7247;&#x673A;&#x7A0B;&#x5E8F;&#x901A;&#x5E38;&#x662F;&#x987A;&#x5E8F;&#x6267;&#x884C;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;&#x6307;&#x4EE4;&#x4E5F;&#x662F;&#x4E00;&#x6761;&#x6761;&#x987A;&#x5E8F;&#x5B58;&#x653E;&#x7684;&#xFF0C;&#x5355;&#x7247;&#x673A;&#x5728;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#x65F6;&#x8981;&#x80FD;&#x628A;&#x8FD9;&#x4E9B;&#x6307;&#x4EE4;&#x4E00;&#x6761;&#x6761;&#x53D6;&#x51FA;&#x5E76;&#x52A0;&#x4EE5;&#x6267;&#x884C;&#xFF0C;&#x5FC5;&#x987B;&#x6709;&#x4E00;&#x4E2A;&#x90E8;&#x4EF6;&#x80FD;&#x8FFD;&#x8E2A;&#x6307;&#x4EE4;&#x6240;&#x5728;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x8FD9;&#x4E00;&#x90E8;&#x4EF6;&#x5C31;&#x662F;&#x7A0B;&#x5E8F;&#x8BA1;&#x6570;&#x5668; PC&#xFF08;&#x5305;&#x542B;&#x5728; CPU &#x4E2D;&#xFF09;&#xFF0C;&#x5728;&#x5F00;&#x59CB;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#x65F6;&#xFF0C;&#x7ED9; PC &#x8D4B;&#x4EE5;&#x7A0B;&#x5E8F;&#x4E2D;&#x7B2C;&#x4E00;&#x6761;&#x6307;&#x4EE4;&#x6240;&#x5728;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x7136;&#x540E;&#x53D6;&#x5F97;&#x6BCF;&#x4E00;&#x6761;&#x8981;&#x6267;&#x884C;&#x7684;&#x547D;&#x4EE4;&#xFF0C;PC &#x5728;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x589E;&#x52A0;&#xFF0C;&#x589E;&#x52A0;&#x91CF;&#x7531;&#x672C;&#x6761;&#x6307;&#x4EE4;&#x957F;&#x5EA6;&#x51B3;&#x5B9A;&#xFF0C;&#x53EF;&#x80FD;&#x662F; 1 &#x3001;2 &#x6216; 3 &#xFF0C;&#x4EE5;&#x6307;&#x5411;&#x4E0B;&#x4E00;&#x6761;&#x6307;&#x4EE4;&#x7684;&#x8D77;&#x59CB;&#x5730;&#x5740;&#xFF0C;&#x4FDD;&#x8BC1;&#x6307;&#x4EE4;&#x987A;&#x5E8F;&#x6267;&#x884C;&#x3002; </p>
+<p>&#x901A;&#x8FC7; IAR &#x7684;&#x4EFF;&#x771F;&#x8C03;&#x8BD5;&#xFF0C;&#x53EF;&#x77E5;CPU&#x521D;&#x59CB;&#x4F1A;&#x8FDB;&#x884C;&#x590D;&#x4F4D;&#x64CD;&#x4F5C;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x590D;&#x4F4D;&#x5411;&#x91CF;&#x6570;&#x636E;&#x4F5C;&#x4E3A; PC &#x5BC4;&#x5B58;&#x5668;&#x7684;&#x503C; &#xFF0C;&#x5728;&#x6267;&#x884C; IAR &#x7F16;&#x8BD1;&#x5668;&#x5B9A;&#x4E49;&#x7684;&#x7A0B;&#x5E8F;&#x5165;&#x53E3;&#x70B9; __program_start &#x51FD;&#x6570;&#xFF0C;&#x5176;&#x53C8;&#x88AB;&#x7F16;&#x8BD1;&#x5668;&#x5B9A;&#x4E49;&#x4E3A; cstart_begin &#x51FD;&#x6570;&#xFF0C;&#x540E;&#x9762;&#x7D27;&#x8DDF;&#x7740;&#x7684;&#x662F; cstart_call_main &#x51FD;&#x6570;&#xFF0C;&#x6B64;&#x51FD;&#x6570;&#x624D;&#x4F1A;&#x53BB;&#x8C03;&#x7528; main &#x51FD;&#x6570; &#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x4E00;&#x822C;&#x7684;&#x9006;&#x5411;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C; &#x53EA;&#x9700;&#x8981;&#x4ECE; main &#x5165;&#x53E3;&#x51FD;&#x6570;&#x5F00;&#x59CB;&#x5206;&#x6790;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3c736724390.png" alt=""></p>
+<p>&#x7F16;&#x7A0B;&#x5927;&#x591A;&#x57FA;&#x4E8E; c &#x6216;&#x6C47;&#x7F16;&#x8BED;&#x8A00;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E0D;&#x540C;&#x7684;&#x5355;&#x7247;&#x673A;&#xFF0C;&#x9996;&#x5148;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x82AF;&#x7247;&#x578B;&#x53F7;&#x67E5;&#x627E;&#x5B98;&#x65B9;&#x6570;&#x636E;&#x624B;&#x518C;&#xFF0C;&#x91CC;&#x9762;&#x5B98;&#x65B9;&#x4F1A;&#x6709;&#x8BE6;&#x7EC6;&#x7684;&#x4ECB;&#x7ECD;&#xFF0C;&#x5305;&#x62EC;&#x529F;&#x80FD;&#x6A21;&#x5757;&#x3001;&#x5F15;&#x811A;&#x5B9A;&#x4E49;&#x3001;&#x5BC4;&#x5B58;&#x5668;&#x3001;ROM&#x3001;RAM&#x3001;&#x65F6;&#x5E8F;&#x56FE;&#x7B49;&#x4FE1;&#x606F;&#xFF0C;&#x53C2;&#x8003;&#x5B98;&#x65B9;&#x8BF4;&#x660E;&#xFF0C;&#x5BF9;&#x5355;&#x7247;&#x673A;&#x5F00;&#x53D1;&#x5165;&#x95E8;&#x5177;&#x6709;&#x5E2E;&#x52A9;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3c6f0e97f49.png" alt=""></p>
+<h5 id="&#x5B9E;&#x4F8B;&#x5206;&#x6790;">&#x5B9E;&#x4F8B;&#x5206;&#x6790;</h5>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x63A7;&#x5236; LED &#x95EA;&#x70C1;&#x7684;&#x7A0B;&#x5E8F; &#xFF1A;</p>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;msp430g2553.h&gt;</span></span>
+
+<span class="hljs-comment">//IO&#x53E3;&#x521D;&#x59CB;&#x5316;</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Port_Init</span><span class="hljs-params">()</span>
+</span>{
+    P1DIR|= <span class="hljs-number">0x40</span>; <span class="hljs-comment">// P1^6&#x914D;&#x7F6E;&#x4E3A;&#x8F93;&#x51FA;</span>
+    P1OUT|= <span class="hljs-number">0x40</span>; <span class="hljs-comment">// P1&#x8F93;&#x51FA;0100 0000</span>
+}
+
+<span class="hljs-comment">//&#x770B;&#x95E8;&#x72D7;&#x521D;&#x59CB;&#x5316;</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">WDT_Init</span><span class="hljs-params">()</span>
+</span>{
+   WDTCTL = WDTPW + WDTHOLD; <span class="hljs-comment">//&#x5173;&#x95ED;&#x770B;&#x95E8;&#x72D7;</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">( <span class="hljs-keyword">void</span> )</span>
+</span>{
+    WDT_Init();
+    Port_Init();
+    <span class="hljs-keyword">while</span> (<span class="hljs-number">1</span>)
+    {
+       __delay_cycles(<span class="hljs-number">500000</span>); <span class="hljs-comment">// &#x7CFB;&#x7EDF;&#x5EF6;&#x65F6; 500 000 &#x673A;&#x5668;&#x5468;&#x671F;</span>
+       P1OUT ^= <span class="hljs-number">0x40</span>; <span class="hljs-comment">// &#x5FAA;&#x73AF;&#x5F02;&#x6216;&#x5B9E;&#x73B0;LED&#x95EA;&#x70C1;</span>
+    }
+}
+</code></pre>
+<p>&#x786C;&#x4EF6;&#x8FDE;&#x7EBF;&#x56FE;&#x5982;&#x4E0B; &#xFF1A;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3c726566d9d.png" alt=""></p>
+<p>&#x7535;&#x8DEF;&#x539F;&#x7406;&#x56FE;&#x5982;&#x4E0B; &#xFF1A;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3c72bc170e6.png" alt=""></p>
+<p>&#x7A0B;&#x5E8F;&#x9996;&#x5148;&#x5B9A;&#x4E49; P1 &#x53E3;&#x5BC4;&#x5B58;&#x5668;&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x4E3A;&#x8F93;&#x51FA;&#x72B6;&#x6001;&#xFF0C;&#x5BC4;&#x5B58;&#x5668;&#x4E3A;8&#x4F4D;&#x6570;&#x636E;&#xFF0C;&#x7136;&#x540E;&#x5728; while &#x5FAA;&#x73AF;&#x6539;&#x53D8; IO &#x8F93;&#x51FA;&#x72B6;&#x6001;&#xFF0C;&#x901A;&#x8FC7;&#x9AD8;&#x4F4E;&#x7535;&#x7247;&#x7684;&#x5FAA;&#x73AF;&#x5EF6;&#x65F6;&#x53D8;&#x5316;&#xFF0C;&#x4F7F; LED &#x95EA;&#x70C1;&#xFF0C;&#x8BE6;&#x7EC6;&#x8BF4;&#x660E;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>WDTCTL = WDTPW + WDTHOLD; //MSP430 &#x7684;&#x770B;&#x95E8;&#x72D7;&#x9ED8;&#x8BA4;&#x662F;&#x6253;&#x5F00;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x7A0B;&#x5E8F;&#x5F00;&#x59CB;&#x4E0D;&#x5173;&#x95ED;&#xFF0C;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x5230;&#x4E00;&#x5B9A;&#x65F6;&#x95F4;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x590D;&#x4F4D;&#xFF0C;&#x90A3;&#x6837;&#x7A0B;&#x5E8F;&#x5C31;&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x6267;&#x884C;</li>
+<li>P1DIR |= 0x40; //PxDIR,Px &#x53E3;&#x65B9;&#x5411;&#x5BC4;&#x5B58;&#x5668;&#xFF0C;&#x4E3A; 0 &#x7AEF;&#x53E3;&#x914D;&#x7F6E;&#x4E3A;&#x8F93;&#x5165;&#xFF08;&#x9ED8;&#x8BA4;&#xFF09;&#xFF0C;&#x4E3A; 1 &#x7AEF;&#x53E3;&#x914D;&#x7F6E;&#x4E3A;&#x8F93;&#x5165;&#xFF0C;P1.6 &#x53E3;&#x914D;&#x7F6E;&#x4E3A;&#x8F93;&#x51FA;</li>
+<li>P1OUT |= 0x40; // &#x914D;&#x7F6E;IO&#x53E3;&#x5BC4;&#x5B58;&#x5668;&#xFF0C;PxOUT,Px &#x53E3;&#x8F93;&#x51FA;&#x5BC4;&#x5B58;&#x5668;&#xFF08;&#x8F93;&#x5165;&#x3001;&#x8F93;&#x51FA;&#x4E24;&#x79CD;&#x6A21;&#x5F0F;&#xFF09;&#xFF0C;&#x5F53; IO &#x53E3;&#x914D;&#x7F6E;&#x4E3A;&#x8F93;&#x51FA;&#x6A21;&#x5F0F;&#x65F6;&#xFF1A;0 &#x8F93;&#x51FA;&#x4F4E;&#x7535;&#x5E73;&#x3001;1 &#x8F93;&#x51FA;&#x9AD8;&#x7535;&#x5E73;&#xFF0C;&#x5F53; IO &#x53E3;&#x914D;&#x7F6E;&#x4E3A;&#x8F93;&#x5165;&#x6A21;&#x5F0F;&#x5E76;&#x4E14;&#x7F6E;&#x9AD8;/&#x7F6E;&#x4F4E;&#x4F7F;&#x80FD;&#x65F6;&#xFF1A;0&#x7F6E;&#x4F4E;&#x3001;1&#x7F6E;&#x9AD8;&#xFF0C;P1&#x8F93;&#x51FA; 0100 0000&#xFF0C;&#x6B64;&#x65F6; P1.6 &#x53E3;&#x4E3A;&#x9AD8;&#x7535;&#x5E73;&#xFF0C;&#x70B9;&#x4EAE; LED &#x706F;&#x3002;</li>
+<li><p>__delay_cycles(500000); // IAR&#x7F16;&#x8BD1;&#x5668;&#x5185;&#x8054;&#x7684;&#x7CBE;&#x51C6;&#x5EF6;&#x65F6;&#x51FD;&#x6570;&#xFF0C;&#x6B64;&#x82AF;&#x7247;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x65F6;&#x949F;&#x4E3B;&#x9891;&#x4E3A;1M&#xFF0C;&#x5373;&#x6BCF;&#x4E2A;&#x673A;&#x5668;&#x5468;&#x671F;&#x4E3A; 1us&#xFF0C;500000&#x5373;&#x4E3A;&#x6267;&#x884C;500000&#x4E2A;&#x673A;&#x5668;&#x5468;&#x671F;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x5EF6;&#x65F6;500&#x6BEB;&#x79D2;&#xFF0C;&#x5B9E;&#x9645;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E3B;&#x9891;&#x7136;&#x540E;&#x6362;&#x7B97;&#x6210;&#x6BEB;&#x79D2;&#x6765;&#x8BA1;&#x65F6;</p>
+<pre><code class="lang-c">  <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> CPU_F ((double)1000000)   &#x8BBE;&#x7F6E;&#x4E3B;&#x9891;&#x6676;&#x632F;1MHZ</span>
+  <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> delay_ms(x) __delay_cycles((long)(CPU_F*(double)x/1000.0))</span>
+</code></pre>
+</li>
+<li><p>P1OUT ^=0x40; //P1 &#x5F02;&#x6216;&#x8F93;&#x51FA; 0000 0000  &#xFF0C;&#x7184;&#x706D; LED &#x706F;&#xFF0C;&#x518D;&#x6B21;&#x5FAA;&#x73AF;&#xFF0C;&#x5F02;&#x6216;&#x8F93;&#x51FA; 0100 0000 &#x70B9;&#x4EAE; LED&#xFF0C;&#x5FAA;&#x73AF;&#x5B9E;&#x73B0;&#x95EA;&#x70C1;&#x529F;&#x80FD;&#x3002;</p>
+</li>
+</ul>
+<h4 id="msp430-&#x9006;&#x5411;&#x57FA;&#x7840;">MSP430 &#x9006;&#x5411;&#x57FA;&#x7840;</h4>
+<p>&#x4F7F;&#x7528;&#x4E0A;&#x9762; LED &#x95EA;&#x70C1;&#x7A0B;&#x5E8F;&#x6765;&#x505A;&#x6848;&#x4F8B;&#xFF0C;&#x901A;&#x8FC7;&#x8C03;&#x8BD5;&#x67E5;&#x770B;&#x6E90;&#x4EE3;&#x7801;&#x548C;&#x4E8C;&#x8FDB;&#x5236;&#x8FD8;&#x6709;&#x6C47;&#x7F16;&#x6307;&#x4EE4;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#x7684;&#x5173;&#x7CFB;&#x3002;</p>
+<ul>
+<li>main &#x51FD;&#x6570;</li>
+</ul>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3c96380df63.png" alt=""></p>
+<ul>
+<li>&#x5176;&#x4ED6;&#x51FD;&#x6570;</li>
+</ul>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3c9638bf0d5.png" alt=""></p>
+<p>&#x8D70;&#x8FB9;&#x4E3A;&#x6E90;&#x4EE3;&#x7801;&#xFF0C;&#x53F3;&#x8FB9;&#x7EA2;&#x8272;&#x5708;&#x4E3A;hex&#x6587;&#x4EF6;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x84DD;&#x8272;&#x5708;&#x4E3A;&#x4E8C;&#x8FDB;&#x5236;&#x5B57;&#x8282;&#x7801;&#xFF0C;&#x7EFF;&#x8272;&#x5708;&#x4E3A;&#x5BF9;&#x5E94;&#x7684;&#x6C47;&#x7F16;&#x4EE3;&#x7801;&#xFF0C;&#x901A;&#x8FC7;&#x4E00;&#x4E00;&#x5BF9;&#x6BD4;&#x53EF;&#x4EE5;&#x6B63;&#x5411;&#x770B;&#x51FA; MSP430 &#x7F16;&#x7801;&#x600E;&#x4E48;&#x7F16;&#x8BD1;&#x6210;&#x56FA;&#x4EF6;&#xFF0C;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x51E0;&#x4E2A;&#x70B9;&#xFF1A;</p>
+<ol>
+<li>&#x5173;&#x95ED;&#x770B;&#x95E8;&#x72D7;&#xFF0C;&#x82AF;&#x7247;&#x5DE5;&#x4F5C;&#x65F6;&#x5FC5;&#x987B;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5B8F;&#x5B9A;&#x4E49;&#x503C;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x5B9A;&#x4F4D;&#x5165;&#x53E3;&#x51FD;&#x6570;&#x3002;</li>
+<li>__delay_cycles&#x7684;&#x53C2;&#x6570;&#x4E3A;&#x9700;&#x8981;&#x6267;&#x884C;&#x7684;&#x673A;&#x5668;&#x5468;&#x671F;&#x4E2A;&#x6570;&#xFF0C;IAR&#x6839;&#x636E;&#x8BE5;&#x53C2;&#x6570;&#x7F16;&#x8BD1;&#x4E3A;&#x9700;&#x8981;&#x6267;&#x884C;&#x5BF9;&#x5E94;&#x673A;&#x5668;&#x5468;&#x671F;&#x6570;&#x91CF;&#x7684;&#x6C47;&#x7F16;&#x6307;&#x4EE4; &#x3002; </li>
+</ol>
+<h5 id="&#x521D;&#x6B65;&#x5206;&#x6790;">&#x521D;&#x6B65;&#x5206;&#x6790;</h5>
+<p>&#x73B0;&#x5728;&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x4E0D;&#x77E5;&#x9053;&#x6E90;&#x7801;&#xFF0C;&#x53EA;&#x6709; hex &#x6587;&#x4EF6;&#x548C;&#x7535;&#x8DEF;&#x56FE;&#xFF0C;&#x53C2;&#x8003;&#x82AF;&#x7247;&#x7684;&#x624B;&#x518C;&#x300A;MSP430G2553 &#x7528;&#x6237;&#x6307;&#x5357;&#x300B;&#x548C;&#x300A;MSP430 &#x6C47;&#x7F16;&#x6307;&#x4EE4;&#x96C6;&#x300B; &#x3002;&#x6211;&#x4EEC;&#x4F7F;&#x7528; ida &#x6765;&#x4E00;&#x4E00;&#x9006;&#x5411;&#x5206;&#x6790;&#x56FA;&#x4EF6; &#xFF0C; 
+&#x8F7D;&#x5165;ida&#xFF0C;&#x5904;&#x7406;&#x5668;&#x9009;&#x62E9; MSP430 &#x3002; </p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3cad0587669.png" alt=""></p>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6709;&#x56DB;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x91CC;&#x6709;&#x4E9B;&#x51FD;&#x6570;&#x5730;&#x5740;&#x4F1A;&#x548C;&#x4E4B;&#x524D;&#x8C03;&#x8BD5;&#x7684;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x6839;&#x636E;&#x770B;&#x95E8;&#x72D7; mov.w   #5A80h, &amp;120h &#x6307;&#x4EE4;&#x53EF;&#x4EE5;&#x786E;&#x5B9A; sub_C038 &#x4E3A;&#x5173;&#x95ED;&#x770B;&#x95E8;&#x72D7;&#x51FD;&#x6570;&#xFF0C; &#x6309; n &#x91CD;&#x547D;&#x540D;&#x6B64;&#x51FD;&#x6570; &#xFF0C;&#x6309; x &#x67E5;&#x770B;&#x4EA4;&#x53C9;&#x5F15;&#x7528;&#x53EF;&#x4EE5;&#x56DE;&#x6EAF;&#x5230;  main &#x51FD;&#x6570;&#x91CC;&#x9762;&#xFF0C;&#x53EF;&#x4EE5;&#x786E;&#x5B9A; sub_C00C &#x4E3A;&#x7A0B;&#x5E8F;&#x7684;&#x5165;&#x53E3;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3cadeed7449.png" alt=""></p>
+<p>&#x6574;&#x4E2A;&#x56FA;&#x4EF6;&#x7A0B;&#x5E8F;&#x7ED3;&#x6784;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3cadf68b002.png" alt=""></p>
+<h4 id="&#x81EA;&#x52A8;&#x5316;&#x5206;&#x6790;">&#x81EA;&#x52A8;&#x5316;&#x5206;&#x6790;</h4>
+<p>&#x5BF9;&#x6BD4;&#x4E4B;&#x524D;&#x548C; IAR &#x8C03;&#x8BD5;&#x754C;&#x9762;&#xFF0C;&#x53D1;&#x73B0; ida &#x91CC;&#x9762;&#x4E00;&#x4E9B;&#x5BC4;&#x5B58;&#x5668;&#x5730;&#x5740;&#x4F8B;&#x5982; P1OUT &#xFF0C;WDTCTL &#x4E0D;&#x80FD;&#x81EA;&#x52A8;&#x663E;&#x793A;&#x51FA;&#x6765;&#xFF0C;&#x800C;&#x662F;&#x5177;&#x4F53;&#x7684;&#x504F;&#x79FB; 21h &#xFF0C; 120h &#xFF0C;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x5206;&#x6790;&#xFF0C;&#x53EF;&#x4EE5;&#x5199;&#x4E00;&#x4E2A;&#x7684;idaPython &#x811A;&#x672C;&#x6765;&#x81EA;&#x52A8;&#x5316;&#x6CE8;&#x91CA;&#xFF0C;&#x8BFB;&#x53D6; msp430g2553.h  &#x5B8F;&#x5B9A;&#x4E49;&#x66FF;&#x6362;&#x3002;</p>
+<pre><code class="lang-c">......
+#define P1IN_               (0x0020u)  /* Port 1 Input */
+READ_ONLY DEFC( P1IN           , P1IN_)
+#define P1OUT_              (0x0021u)  /* Port 1 Output */
+DEFC(   P1OUT             , P1OUT_)
+#define P1DIR_              (0x0022u)  /* Port 1 Direction */
+DEFC(   P1DIR             , P1DIR_)
+......
+#define WDTCTL_             (0x0120u)  /* Watchdog Timer Control */
+DEFW(   WDTCTL            , WDTCTL_)
+......
+</code></pre>
+<p>Python&#x811A;&#x672C;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4ECE;&#x9644;&#x4EF6;&#x6587;&#x4EF6;&#x5939; <a href="../../_assets/scripts/2.3.2/msp430_auto_comment.py">/scripts/2.3.2/msp430_auto_comment.py</a> &#x83B7;&#x53D6;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> idaapi <span class="hljs-keyword">import</span> *
+
+file = open(<span class="hljs-string">&quot;msp430g2553.h&quot;</span>,<span class="hljs-string">&apos;r&apos;</span>)
+lines = file.readlines()
+funcs = Functions()
+<span class="hljs-keyword">for</span> f <span class="hljs-keyword">in</span> funcs:
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> FuncItems(f):
+        <span class="hljs-keyword">try</span>:
+            <span class="hljs-keyword">if</span> idc.GetOpnd(i,<span class="hljs-number">0</span>)[<span class="hljs-number">0</span>]==<span class="hljs-string">&apos;&amp;&apos;</span>:
+                <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> lines:
+                    <span class="hljs-keyword">if</span> line.find(idc.GetOpnd(i,<span class="hljs-number">0</span>)[<span class="hljs-number">1</span>:].replace(<span class="hljs-string">&apos;h&apos;</span>,<span class="hljs-string">&apos;&apos;</span>,<span class="hljs-number">1</span>)) != <span class="hljs-number">-1</span>:
+                        line.expandtabs()
+                        words = line.split(<span class="hljs-string">&apos; &apos;</span>)
+                        MakeComm(i,words[<span class="hljs-number">1</span>][:<span class="hljs-number">-1</span>])
+                        <span class="hljs-keyword">break</span>
+            <span class="hljs-keyword">if</span> idc.GetOpnd(i,<span class="hljs-number">1</span>)[<span class="hljs-number">0</span>]==<span class="hljs-string">&apos;&amp;&apos;</span>:
+                <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> lines:
+                    <span class="hljs-keyword">if</span> line.find(idc.GetOpnd(i,<span class="hljs-number">1</span>)[<span class="hljs-number">1</span>:].replace(<span class="hljs-string">&apos;h&apos;</span>,<span class="hljs-string">&apos;&apos;</span>,<span class="hljs-number">1</span>)) != <span class="hljs-number">-1</span>:
+                        line.expandtabs()
+                        words = line.split(<span class="hljs-string">&apos; &apos;</span>)
+                        MakeComm(i,words[<span class="hljs-number">1</span>][:<span class="hljs-number">-1</span>])
+                        <span class="hljs-keyword">break</span>
+        <span class="hljs-keyword">except</span> :
+            <span class="hljs-keyword">continue</span>
+</code></pre>
+<p>&#x5728;&#x67D0;&#x56FA;&#x4EF6;&#x4E2D;&#x6267;&#x884C;&#x811A;&#x672C;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x628A;&#x5730;&#x5740;&#x5BF9;&#x5E94;&#x7684;&#x5BC4;&#x5B58;&#x5668;&#x81EA;&#x52A8;&#x6CE8;&#x91CA;&#x51FA;&#x6765;&#xFF0C;&#x5927;&#x5927;&#x65B9;&#x4FBF;&#x4E4B;&#x540E;&#x7684;&#x9006;&#x5411;&#x3002; </p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3cadf68b2a1.png" alt=""></p>
+<h5 id="&#x9006;&#x5411;&#x7ED3;&#x679C;">&#x9006;&#x5411;&#x7ED3;&#x679C;</h5>
+<p>&#x56DE;&#x5230; main &#x51FD;&#x6570;&#xFF0C;&#x7EE7;&#x7EED;&#x6839;&#x636E;&#x6D41;&#x7A0B;&#x9010;&#x6B65;&#x5206;&#x6790; &#xFF0C;&#x8C03;&#x7528; sub_C02A &#xFF0C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x6709;&#x4E24;&#x4E2A;&#x6307;&#x4EE4;&#x3002;</p>
+<pre><code>bis.b   #40h, &amp;22h      ; P1DIR  &#x914D;&#x7F6E;P1.6&#x53E3;&#x914D;&#x7F6E;&#x4E3A;&#x8F93;&#x51FA;&#x53E3;
+bis.b   #40h, &amp;21h      ; P1OUT  P1 &#xFF0C;&#x914D;&#x5408;&#x7535;&#x8DEF;&#x56FE;&#x5206;&#x6790;&#x5373;&#x4E3A;&#x9AD8;&#x7535;&#x5E73;&#xFF0C;LED &#x706F;&#x4EAE; &#x3002;
+</code></pre><p>&#x731C;&#x6D4B;&#x6B64;&#x51FD;&#x6570;&#x529F;&#x80FD;&#x4E3A;&#x4E00;&#x4E9B; io &#x53E3;&#x7684;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x6DFB;&#x52A0;&#x5907;&#x6CE8;&#x548C;&#x4FEE;&#x6539;&#x51FD;&#x6570;&#x540D;&#x79F0;&#x3002;&#x7EE7;&#x7EED;&#x540E;&#x9762;&#x4E3A;&#x4E00;&#x4E2A;&#x5FAA;&#x73AF;&#x7ED3;&#x6784;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3cbe7837d7f.png" alt=""></p>
+<p>&#x6839;&#x636E; ida &#x7ED3;&#x6784;&#x663E;&#x793A;&#x4E3A;&#x4E24;&#x4E2A;&#x5FAA;&#x73AF;&#x5D4C;&#x5957;&#xFF0C;&#x5916;&#x9762;&#x4E00;&#x4E2A;&#x6B7B;&#x5FAA;&#x73AF;&#xFF0C;&#x5D4C;&#x5957;&#x4E00;&#x4E2A; loc_C01C &#x6761;&#x4EF6;&#x5FAA;&#x73AF;&#xFF0C;&#x6839;&#x636E;&#x6307;&#x4EE4;&#x64CD;&#x4F5C;&#x548C;&#x4E0A;&#x4E0B;&#x5173;&#x8054;&#x63A8;&#x65AD;&#x5176;&#x4E3A;&#x5EF6;&#x65F6;&#x529F;&#x80FD;&#xFF1A;</p>
+<pre><code class="lang-c">mov.w    <span class="hljs-meta">#E846 &#xFF0C; R15 <span class="hljs-comment">// 0xE846 &#x79FB;&#x5165;R15&#x5BC4;&#x5B58;&#x5668;&#xFF0C;&#x8017;&#x65F6;2&#x4E2A;&#x673A;&#x5668;&#x5468;&#x671F;</span></span>
+nop <span class="hljs-comment">// &#x7A7A;&#x6307;&#x4EE4;&#x5360;&#x4F4D;&#xFF0C;&#x8017;&#x65F6;1&#x4E2A;&#x673A;&#x5668;&#x5468;&#x671F;</span>
+mov.w    <span class="hljs-meta">#0x1 &#xFF0C; R14 <span class="hljs-comment">// 0x1 &#x79FB;&#x5165;R14&#x5BC4;&#x5B58;&#x5668;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E3A;R15&#x5BC4;&#x5B58;&#x5668;&#x7684;&#x6700;&#x9AD8;&#x4F4D;&#xFF0C;&#x8017;&#x65F6;1&#x4E2A;&#x673A;&#x5668;&#x5468;&#x671F;</span></span>
+add.w    <span class="hljs-meta">#0xFFFF , R15 <span class="hljs-comment">// 0xFFFF &#x79FB;&#x5165;R15&#x5BC4;&#x5B58;&#x5668;&#xFF0C;&#x56E0;&#x6570;&#x503C;&#x8D85;&#x8FC7;16&#x4F4D;&#xFF0C;&#x9700;&#x8981;&#x8FDB;&#x4F4D;&#xFF0C;&#x540C;&#x65F6;SR&#x5BC4;&#x5B58;&#x5668;N&#x72B6;&#x6001;&#x4F4D;&#x7F6E;1&#xFF0C;C&#x72B6;&#x6001;&#x4F4D;&#x7F6E;&#x4E3A;1&#xFF0C;&#x8017;&#x65F6;1&#x4E2A;&#x673A;&#x5668;&#x5468;&#x671F;</span></span>
+addc.w    <span class="hljs-meta">#0xFFFF , R14 <span class="hljs-comment">// 0xFFFF &#x52A0;&#x4E0A; C &#x72B6;&#x6001;&#x4F4D;&#x7684;&#x503C;&#xFF0C;&#x79FB;&#x5165;R14&#x5BC4;&#x5B58;&#x5668;&#xFF0C;&#x56E0;&#x6570;&#x503C;&#x8D85;&#x8FC7;16&#x4F4D;&#xFF0C;&#x9700;&#x8981;&#x8FDB;&#x4F4D;&#xFF0C;C&#x72B6;&#x6001;&#x4F4D;&#x7F6E;&#x4FDD;&#x6301;&#x4E3A;1&#xFF0C;&#x8017;&#x65F6;1&#x4E2A;&#x673A;&#x5668;&#x5468;&#x671F;</span></span>
+jc  <span class="hljs-number">0xC0</span>IC  <span class="hljs-comment">//&#x6839;&#x636E;&#x8FDB;&#x4F4D;&#x4F4D;&#x7684;&#x503C;&#x4E5F;&#x5C31;&#x662F;C&#x72B6;&#x6001;&#x4F4D;&#x7684;&#x503C;&#x5224;&#x65AD;&#x662F;&#x5426;&#x8DF3;&#x8F6C;&#x81F3; 0xC0IC &#xFF0C;&#x5F53;&#x5FAA;&#x73AF;&#x5B8C;&#x6240;&#x6709;&#x5468;&#x671F;&#xFF0C;C&#x72B6;&#x6001;&#x4F4D;&#x590D;&#x4F4D;&#x4E3A;0&#xFF0C;&#x7ED3;&#x675F;&#x5FAA;&#x73AF;&#xFF0C;&#x8017;&#x65F6;2&#x4E2A;&#x673A;&#x5668;&#x5468;&#x671F;&#x3002;</span>
+</code></pre>
+<p>loc_C01C &#x6267;&#x884C;&#x9700;&#x8981;4&#x4E2A;&#x673A;&#x5668;&#x5468;&#x671F;&#xFF0C;&#x521D;&#x59CB;&#x7F6E;&#x4F4D;&#x8D4B;&#x503C;&#x9700;&#x8981;8&#x4E2A;&#x673A;&#x5668;&#x5468;&#x671F;&#xFF0C;&#x5373;&#x53EF;&#x63A8;&#x7B97;&#x51FA;&#x6574;&#x4E2A;&#x5FAA;&#x73AF;&#x9700;&#x8981; 0x1e846*4 + 8 = 500000 &#x4E2A;&#x673A;&#x5668;&#x5468;&#x671F;&#xFF0C;&#x914D;&#x5408;&#x4E0A;&#x4E4B;&#x524D;&#x5B9A;&#x4E49;&#x7684;&#x65F6;&#x949F;&#x4E3B;&#x9891; 1M hz&#xFF0C;&#x63A8;&#x7B97;&#x51FA;&#x603B;&#x5EF6;&#x65F6;&#x957F;&#x4E3A; 0.5 s &#xFF0C;&#x7136;&#x540E;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x8BED;&#x53E5;&#x3002;</p>
+<pre><code class="lang-c">xor.b   <span class="hljs-meta">#40h, &amp;21h      ;  P1OUT&#x5BC4;&#x5B58;&#x5668;&#x7684;&#x503C;&#x4E0E;0x40&#x5F02;&#x6216;&#xFF0C; P1.6&#x53E3;&#x8F93;&#x51FA;&#x5BC4;&#x5B58;&#x5668;&#x7B2C;7&#x4F4D;&#x7684;&#x503C;&#xFF0C; &#x5FAA;&#x73AF;&#x5F02;&#x6216;&#xFF0C;&#x8F93;&#x51FA;&#x9AD8;&#x4F4E;&#x7535;&#x5E73;&#xFF0C;&#x5B9E;&#x73B0;&#x95EA;&#x70C1;&#x529F;&#x80FD;&#x3002;</span>
+</code></pre>
+<p>&#x6839;&#x636E;&#x4E0A;&#x8FF0;&#x5206;&#x6790;&#xFF0C;&#x7ED3;&#x5408;&#x7535;&#x8DEF;&#x548C;&#x786C;&#x4EF6;&#xFF0C;&#x672C;&#x7A0B;&#x5E8F;&#x901A;&#x8FC7;&#x5BF9;IO&#x53E3;&#x5BC4;&#x5B58;&#x5668;&#x503C;&#x7684;&#x5FAA;&#x73AF;&#x5F02;&#x6216;&#xFF0C;&#x8F93;&#x51FA;&#x9AD8;&#x4F4E;&#x7535;&#x5E73;&#xFF0C;&#x518D;&#x901A;&#x8FC7;&#x6BCF;&#x6B21;&#x5EF6;&#x65F6;500&#x6BEB;&#x79D2;&#xFF0C;&#x5B9E;&#x73B0;&#x63A7;&#x5236; LED &#x95EA;&#x70C1;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x5B8C;&#x6574;&#x9006;&#x5411;&#x7ED3;&#x679C;&#xFF1A;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b23e9d8cbb91.png" alt=""></p>
+<h3 id="&#x67D0;&#x667A;&#x80FD;&#x9501;">&#x67D0;&#x667A;&#x80FD;&#x9501;</h3>
+<p>&#x518D;&#x6765;&#x770B;&#x4E00;&#x4E2A;&#x5B9E;&#x9645;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x5BF9;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E; MSP430 &#x82AF;&#x7247;&#x7684;&#x7535;&#x5B50;&#x9501;&#x9006;&#x5411;&#x5206;&#x6790;&#xFF0C;&#x8BE5;&#x6B3E;&#x7535;&#x5B50;&#x5BC6;&#x7801;&#x9501;&#x677F;&#x8F7D; MSP430F149 &#x5355;&#x7247;&#x673A;&#xFF0C;&#x57FA;&#x672C;&#x529F;&#x80FD;&#x662F;&#x5F53;&#x8F93;&#x5165;&#x6B63;&#x786E;&#x5BC6;&#x7801;&#x65F6;&#xFF0C;&#x5355;&#x7247;&#x673A;&#x4F1A;&#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x4FE1;&#x53F7;&#xFF0C;&#x4F7F;&#x7535;&#x673A;&#x8F6C;&#x52A8; &#x5B9E;&#x73B0;&#x5F00;&#x9501;&#x52A8;&#x4F5C;&#x3002;</p>
+<h4 id="&#x63D0;&#x53D6;&#x56FA;&#x4EF6;">&#x63D0;&#x53D6;&#x56FA;&#x4EF6;</h4>
+<p>&#x901A;&#x8FC7;&#x4E4B;&#x540E;&#x7684; 2.5.2 &#x7AE0;&#x8282; SBW &#x534F;&#x8BAE;&#x63D0;&#x53D6; hex &#x683C;&#x5F0F;&#x7684;&#x56FA;&#x4EF6;&#x3002;</p>
+<h4 id="&#x7535;&#x8DEF;&#x5206;&#x6790;">&#x7535;&#x8DEF;&#x5206;&#x6790;</h4>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3afe34d24b6.png" alt=""></p>
+<p>&#x67E5;&#x770B;&#x7535;&#x8DEF;&#x7ED3;&#x6784;&#xFF0C;&#x53D1;&#x73B0;&#x5728; P2.0 &#x5230; P2.3 &#x53E3;&#x5E03;&#x7EBF;&#x8FDE;&#x63A5;&#x81F3; TC1508S &#x578B;&#x53F7;&#x7684;&#x82AF;&#x7247;&#x4E0A;&#xFF0C;&#x67E5;&#x82AF;&#x7247;&#x624B;&#x518C;&#x5F97;&#x77E5; TC1508S &#x662F;&#x53CC;&#x901A;&#x9053;&#x5185;&#x7F6E;&#x529F;&#x7387; MOS &#x5168;&#x6865;&#x9A71;&#x52A8;&#x82AF;&#x7247;&#x3002;&#x8BE5;&#x82AF;&#x7247;&#x4E3B;&#x8981;&#x5B9E;&#x73B0;&#x9A71;&#x52A8;&#x76F4;&#x6D41;&#x7535;&#x673A;&#x8FDB;&#x884C;&#x6B63;&#x53CD;&#x8F6C;&#x3001;&#x524D;&#x8FDB;&#x540E;&#x9000;&#x7B49;&#x529F;&#x80FD;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3afdf529f7e.png" alt=""></p>
+<p>ULN2003 &#x8F93;&#x51FA;&#x7BA1;&#x811A;&#x8FDE;&#x81F3;&#x4E00;&#x4E2A;&#x53CC;&#x6781;&#x6027;&#x7684;&#x76F4;&#x6D41;&#x7535;&#x673A;&#x4E0A;&#xFF0C;&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x7535;&#x673A;&#x6B63;&#x53CD;&#x8F6C;&#x7B49;&#x52A8;&#x4F5C;&#xFF0C;&#x7531;&#x6B64;&#x53EF;&#x77E5;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x4F1A;&#x521D;&#x59CB;&#x5316;P2.0-P2.3 IO&#x53E3;&#xFF0C;&#x5E76;&#x5728;&#x5BC6;&#x7801;&#x6B63;&#x786E;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8F93;&#x51FA;&#x63A7;&#x5236;&#x4FE1;&#x53F7;&#xFF0C;&#x53C2;&#x8003; TC1508S &#x7684;&#x903B;&#x8F91;&#x771F;&#x503C;&#x8868;&#xFF1A;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3afe1e2ad60.png" alt=""></p>
+<h4 id="&#x9006;&#x5411;&#x5206;&#x6790;">&#x9006;&#x5411;&#x5206;&#x6790;</h4>
+<p>&#x8F7D;&#x5165; ida &#xFF0C;&#x8FD0;&#x884C; msp430_auto_comment.py &#x81EA;&#x52A8;&#x52A0;&#x4E0A;&#x6CE8;&#x91CA; &#xFF0C;&#x786E;&#x5B9A; main &#x51FD;&#x6570;&#xFF0C;&#x4ECE; main &#x5F00;&#x59CB;&#x5206;&#x6790;&#x6574;&#x4E2A;&#x56FA;&#x4EF6;&#x6D41;&#x7A0B;&#x3002;
+&#x6839;&#x636E;&#x4E4B;&#x524D;&#x7684;&#x7535;&#x8DEF;&#x5206;&#x6790;&#xFF0C;&#x53EF;&#x4EE5;&#x521D;&#x6B65;&#x5F97;&#x51FA;P2.0-P2.3 IO &#x53E3;&#x6765;&#x63A7;&#x5236;&#x7535;&#x673A;&#x82AF;&#x7247;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8981;&#x5F00;&#x5173;&#x9501;&#x7684;&#x5173;&#x952E; &#x3002;
+&#x521D;&#x6B65;&#x9006;&#x5411;&#x5206;&#x6790;&#x7ED3;&#x679C;&#xFF1A;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3cad0587345.png" alt=""></p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3cad0587ac1.png" alt=""></p>
+<p>&#x7531;&#x4E8E;&#x7BC7;&#x5E45;&#x6709;&#x9650;&#xFF0C;&#x5BF9;&#x667A;&#x80FD;&#x9501;&#x7684;&#x8BE6;&#x7EC6;&#x9006;&#x5411;&#x5206;&#x6790;&#x53CA;&#x5176;&#x653B;&#x9632;&#x53EF;&#x4EE5;&#x770B;&#x540E;&#x7EED;&#x7684;&#x7AE0;&#x8282; &#x3002;</p>
+<h2 id="&#x5D4C;&#x5165;&#x5F0F;">&#x5D4C;&#x5165;&#x5F0F;</h2>
+<p>&#x5D4C;&#x5165;&#x5F0F;&#x8BBE;&#x5907;&#x7684;&#x9006;&#x5411;&#x548C;&#x4F20;&#x7EDF;&#x4E8C;&#x8FDB;&#x5236;&#x4E00;&#x6837;&#x5DEE;&#x4E0D;&#x591A;&#xFF0C;&#x6CE8;&#x610F;&#x67B6;&#x6784;&#x5C31;&#x884C;&#xFF0C;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x8DEF;&#x7531;&#x5668;&#x7684; web &#x670D;&#x52A1;&#x5668;&#x6F0F;&#x6D1E;&#x9006;&#x5411;&#x6765;&#x505A;&#x6848;&#x4F8B;&#x3002;</p>
+<h3 id="&#x67D0;&#x8DEF;&#x7531;&#x5668;&#x6F0F;&#x6D1E;&#x5206;&#x6790;">&#x67D0;&#x8DEF;&#x7531;&#x5668;&#x6F0F;&#x6D1E;&#x5206;&#x6790;</h3>
+<p>&#x67D0;&#x8DEF;&#x7531;&#x5668;&#x5B58;&#x5728;&#x6EA2;&#x51FA;&#x6F0F;&#x6D1E;&#xFF0C;&#x6D4B;&#x8BD5; poc &#x5982;&#x4E0B;&#xFF0C;&#x6765;&#x9759;&#x6001;&#x9006;&#x5411;&#x5206;&#x6790;&#x6F0F;&#x6D1E;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b390e96f181b.png" alt=""></p>
+<p>&#x4ECE;poc&#x4E2D;&#x53EF;&#x4EE5;&#x5F97;&#x77E5;&#xFF0C;&#x8DEF;&#x7531;&#x5668;&#x4E0A;&#x7684; web &#x670D;&#x52A1;&#x5668;&#x5728;&#x5904;&#x7406; /goform/set_manpwd &#x8BF7;&#x6C42;&#x65F6;&#x51FA;&#x73B0;&#x4E86;&#x95EE;&#x9898;&#xFF0C;&#x5BFC;&#x81F4;&#x5728;&#x672A;&#x8FDB;&#x884C;&#x7528;&#x6237;&#x6821;&#x9A8C;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x901A;&#x8FC7; routepwd &#x5B57;&#x6BB5;&#x53EF;&#x4EE5;&#x66F4;&#x6539;&#x7BA1;&#x7406;&#x5458;&#x5BC6;&#x7801;&#xFF0C;&#x4E14;&#x80FD;&#x5D29;&#x6E83; web &#x670D;&#x52A1;&#x5668;&#x3002;</p>
+<p>&#x63D0;&#x53D6;&#x8DEF;&#x7531;&#x5668;&#x4E2D;&#x7684;&#x56FA;&#x4EF6;&#xFF0C;&#x4F7F;&#x7528; binwalk &#x89E3;&#x538B;&#x56FA;&#x4EF6;&#xFF0C;&#x5728; /bin &#x76EE;&#x5F55;&#x4E0B;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x8DEF;&#x7531;&#x5668;&#x7684; web&#x670D;&#x52A1;&#x5668;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6; goahead&#x3002;&#x4F7F;&#x7528; file &#x547D;&#x4EE4;&#x67E5;&#x770B; goahead &#x7684;&#x4FE1;&#x606F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b390d6b2a969.png" alt=""></p>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x76EE;&#x6807;&#x5E73;&#x53F0;&#x662F; mips32 &#x4F4D;&#xFF0C;LSB &#x5B57;&#x6BB5;&#x8868;&#x660E;&#x662F;&#x5C0F;&#x7AEF;&#x5E8F;&#xFF0C;&#x6307;&#x4EE4;&#x96C6;&#x4E3A; mips32 rel2&#x3002;
+&#x4F7F;&#x7528; ida &#x5BF9; goahead &#x8FDB;&#x884C;&#x9759;&#x6001;&#x5206;&#x6790;&#xFF0C;&#x5728; strings &#x7A97;&#x53E3;&#x4E2D;&#x76F4;&#x63A5;&#x641C;&#x7D22; set_manpwd &#xFF0C;&#x5F97;&#x5230;&#x4E24;&#x5904;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b390e34d34ae.png" alt=""></p>
+<p>&#x5206;&#x522B;&#x67E5;&#x770B;&#x4EA4;&#x53C9;&#x5F15;&#x7528;&#x5F97;&#x5230; 0x46c558 &#x5904;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5728; sub_457ebc &#x4E2D;&#x88AB;&#x5F15;&#x7528;&#x4E24;&#x6B21;&#xFF0C;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b39100b3120a.png" alt=""></p>
+<p>0x46b6b4 &#x5904;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5728; formDefineCGIjson &#x4E2D;&#x88AB;&#x5F15;&#x7528;&#x4E86;&#x4E00;&#x6B21;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3910574ca57.png" alt=""></p>
+<p>&#x67E5;&#x770B; formDefineCGIjson &#x4E2D;&#x7684;&#x5F15;&#x7528;&#x4F4D;&#x7F6E;&#x53D1;&#x73B0; websFormDefine &#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x88AB;&#x7F6E;&#x4E3A; sub_457ebc &#x7684;&#x6307;&#x9488;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b391068d0fae.png" alt=""></p>
+<p>&#x63A8;&#x65AD; sub_457ebc &#x4E3A;&#x4E3B;&#x8981;&#x5904;&#x7406; set_manpwd &#x7684;&#x51FD;&#x6570;&#xFF0C;&#x8FDB;&#x5165;sub_457ebc &#x51FD;&#x6570;&#x53D1;&#x73B0;&#x4E3B;&#x8981;&#x6709;&#x4EE5;&#x4E0B;&#x51FD;&#x6570;&#x8C03;&#x7528;&#xFF1A;
+&#x83B7;&#x53D6; routepwd &#x7684;&#x503C;&#xFF0C;&#x8BE5;&#x5B57;&#x6BB5;&#x6B63;&#x662F;&#x53EF;&#x4EE5;&#x66F4;&#x6539;&#x5BC6;&#x7801;&#x548C;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b390e6acf933.png" alt=""></p>
+<p>&#x5C06;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#x683C;&#x5F0F;&#x5316;&#x6210; json &#x5BF9;&#x8C61;&#x5E76;&#x4F20;&#x5165; bs_setmanpwd &#x51FD;&#x6570;&#xFF0C;&#x540C;&#x65F6;&#x4F20;&#x5165;&#x7684;&#x8FD8;&#x6709;&#x5F53;&#x524D;&#x6808;&#x5E27;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5730;&#x5740;&#xFF0C;&#x5BF9; bs_setmanpwd &#x51FD;&#x6570;&#x5206;&#x6790;&#x4E4B;&#x540E;&#x53D1;&#x73B0;&#x662F;&#x4E00;&#x4E2A;&#x6765;&#x81EA; libshare.so &#x7684;&#x5E93;&#x51FD;&#x6570;&#xFF0C;&#x4E14;&#x5BF9;&#x6211;&#x4EEC;&#x7684;&#x6F0F;&#x6D1E;&#x5E76;&#x65E0;&#x91CD;&#x5927;&#x5F71;&#x54CD;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b390e7d89d76.png" alt=""></p>
+<p>&#x5BF9; http &#x8BF7;&#x6C42;&#x8FDB;&#x884C;&#x56DE;&#x590D;&#x5E76;&#x5220;&#x9664; json &#x5BF9;&#x8C61;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3910db68c51.png" alt=""></p>
+<p>&#x83B7;&#x53D6; password &#x5E76;&#x4F7F;&#x7528; password &#x683C;&#x5F0F;&#x5316;&#x5B57;&#x7B26;&#x4E32; &#x201C;chpasswd.sh admin %s&#x201D;,&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x6B64;&#x6761;&#x547D;&#x4EE4;&#x5E94;&#x8BE5;&#x548C;&#x4FEE;&#x6539;&#x7BA1;&#x7406;&#x5458;&#x5BC6;&#x7801;&#x6709;&#x5173;&#xFF0C;&#x7EE7;&#x7EED;&#x5411;&#x4E0B;&#x53D1;&#x73B0; bl_do_system &#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x4E3A;&#x521A;&#x624D;&#x683C;&#x5F0F;&#x5316;&#x597D;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x63A8;&#x6D4B;&#x6B64;&#x5904;&#x5E94;&#x8BE5;&#x662F;&#x4FEE;&#x6539;&#x5BC6;&#x7801;&#x5E76;&#x8FDB;&#x884C;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x7684;&#x5730;&#x65B9;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b390e87c11a9.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="extraction.html" class="navigation navigation-prev " aria-label="Previous page: 2.3.1 固件提取">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../protocol/" class="navigation navigation-next " aria-label="Next page: 2.4 协议分析">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.3.2 固件逆向","level":"1.3.3.2","depth":3,"next":{"title":"2.4 协议分析","level":"1.3.4","depth":2,"path":"hardware-security/protocol/index.md","ref":"hardware-security/protocol/index.md","articles":[{"title":"2.4.1 网络","level":"1.3.4.1","depth":3,"path":"hardware-security/protocol/network.md","ref":"hardware-security/protocol/network.md","articles":[]},{"title":"2.4.2 USB","level":"1.3.4.2","depth":3,"path":"hardware-security/protocol/USB.md","ref":"hardware-security/protocol/USB.md","articles":[]},{"title":"2.4.3 其他","level":"1.3.4.3","depth":3,"path":"hardware-security/protocol/others.md","ref":"hardware-security/protocol/others.md","articles":[]}]},"previous":{"title":"2.3.1 固件提取","level":"1.3.3.1","depth":3,"path":"hardware-security/firmware/extraction.md","ref":"hardware-security/firmware/extraction.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-livereload","image-captions","github","editlink","favicon","baidu","easyseo-7dtime"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/yaseng/iot-security-wiki"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/yaseng/iot-security-wiki/blob/master/"},"search":{},"easyseo-7dtime":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"_assets/images/favicon.ico","bookmark":"_assets/images/favicon.ico","appleTouch":"_assets/images/favicon.ico"},"baidu":{"token":"aaaa"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"attributes":{"width":"600"},"caption":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Yaseng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"title":"物联网安全百科","language":"zh-hans","links":{"sidebar":{"物联网安全百科":"http://iot-security.wiki"}},"gitbook":"*","description":"物联网安全开源图书","theme-default":{"showLevel":true}},"file":{"path":"hardware-security/firmware/reverse.md","mtime":"2018-07-05T18:24:16.752Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-05T19:01:55.530Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

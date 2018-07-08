@@ -1,0 +1,686 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>5.锁具安全 · 物联网安全百科</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Yaseng">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../physicals-security/" />
+    
+    
+    <link rel="prev" href="../chip-security/" />
+    
+
+    
+        <link rel="shortcut icon" href='../_assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../_assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../_assets/images/favicon.ico'>
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://iot-security.wiki" target="_blank" class="custom-link">物联网安全百科</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../basics/">
+            
+                <a href="../basics/">
+            
+                    
+                    1. 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../basics/iot.html">
+            
+                <a href="../basics/iot.html">
+            
+                    
+                    1.1 物联网介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../hardware-security/">
+            
+                <a href="../hardware-security/">
+            
+                    
+                    2. 硬件安全
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../hardware-security/introduction.html">
+            
+                <a href="../hardware-security/introduction.html">
+            
+                    
+                    2.1 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../hardware-security/hardware/">
+            
+                <a href="../hardware-security/hardware/">
+            
+                    
+                    2.2 硬件分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../hardware-security/hardware/preliminary.html">
+            
+                <a href="../hardware-security/hardware/preliminary.html">
+            
+                    
+                    2.2.1 初探
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../hardware-security/hardware/circuit.html">
+            
+                <a href="../hardware-security/hardware/circuit.html">
+            
+                    
+                    2.2.2 电路分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../hardware-security/firmware/">
+            
+                <a href="../hardware-security/firmware/">
+            
+                    
+                    2.3 固件分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../hardware-security/firmware/extraction.html">
+            
+                <a href="../hardware-security/firmware/extraction.html">
+            
+                    
+                    2.3.1 固件提取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../hardware-security/firmware/reverse.html">
+            
+                <a href="../hardware-security/firmware/reverse.html">
+            
+                    
+                    2.3.2 固件逆向
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../hardware-security/protocol/">
+            
+                <a href="../hardware-security/protocol/">
+            
+                    
+                    2.4 协议分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../hardware-security/protocol/network.html">
+            
+                <a href="../hardware-security/protocol/network.html">
+            
+                    
+                    2.4.1 网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../hardware-security/protocol/USB.html">
+            
+                <a href="../hardware-security/protocol/USB.html">
+            
+                    
+                    2.4.2 USB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../hardware-security/protocol/others.html">
+            
+                <a href="../hardware-security/protocol/others.html">
+            
+                    
+                    2.4.3 其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../hardware-security/debug/">
+            
+                <a href="../hardware-security/debug/">
+            
+                    
+                    2.5 硬件调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../hardware-security/debug/serial-port.html">
+            
+                <a href="../hardware-security/debug/serial-port.html">
+            
+                    
+                    2.5.1 串口调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../hardware-security/debug/jtag.html">
+            
+                <a href="../hardware-security/debug/jtag.html">
+            
+                    
+                    2.5.2 JTAG调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../hardware-security/debug/remote.html">
+            
+                <a href="../hardware-security/debug/remote.html">
+            
+                    
+                    2.5.3 远程调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../hardware-security/modification/">
+            
+                <a href="../hardware-security/modification/">
+            
+                    
+                    2.6 硬件修改
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../hardware-security/modification/hardware.html">
+            
+                <a href="../hardware-security/modification/hardware.html">
+            
+                    
+                    2.6.1 硬改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../hardware-security/modification/firmware.html">
+            
+                <a href="../hardware-security/modification/firmware.html">
+            
+                    
+                    2.6.2 软改
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../hardware-security/vulnerability/">
+            
+                <a href="../hardware-security/vulnerability/">
+            
+                    
+                    2.7 漏洞挖掘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../hardware-security/protection/">
+            
+                <a href="../hardware-security/protection/">
+            
+                    
+                    2.8 安全防护
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../hardware-security/cases/">
+            
+                <a href="../hardware-security/cases/">
+            
+                    
+                    2.9 综合案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../radio-security/">
+            
+                <a href="../radio-security/">
+            
+                    
+                    3.无线电安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chip-security/">
+            
+                <a href="../chip-security/">
+            
+                    
+                    4.芯片安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    5.锁具安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../physicals-security/">
+            
+                <a href="../physicals-security/">
+            
+                    
+                    6.物理安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../appendix/">
+            
+                <a href="../appendix/">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >5.锁具安全</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x9501;&#x5177;&#x5B89;&#x5168;">&#x9501;&#x5177;&#x5B89;&#x5168;</h1>
+<p>&#x4ECE;&#x539F;&#x59CB;&#x516C;&#x6709;&#x5236;&#x7684;&#x74E6;&#x89E3;&#x5230;&#x79C1;&#x6709;&#x5236;&#x610F;&#x8BC6;&#x7684;&#x840C;&#x82BD;&#xFF0C;&#x4EBA;&#x7C7B;&#x793E;&#x4F1A;&#x9010;&#x6E10;&#x4ECE;&#x611A;&#x6627;&#x8D70;&#x5411;&#x4E86;&#x6587;&#x660E;&#xFF0C;&#x800C;&#x4F34;&#x968F;&#x7740;&#x79C1;&#x6709;&#x5236;&#x7684;&#x8BDE;&#x751F;&#xFF0C;&#x9501;&#x5177;&#x4E5F;&#x5E94;&#x8FD0;&#x800C;&#x751F;&#xFF0C;&#x4F5C;&#x4E3A;&#x4FDD;&#x62A4;&#x79C1;&#x6709;&#x8D22;&#x4EA7;&#x7684;&#x91CD;&#x8981;&#x624B;&#x6BB5;&#xFF0C;&#x9501;&#x5177;&#x968F;&#x7740;&#x6587;&#x660E;&#x7684;&#x53D1;&#x5C55;&#xFF0C;&#x4E5F;&#x8D70;&#x8FC7;&#x4E86;5000&#x4E2A;&#x5E74;&#x5934;&#xFF0C;&#x800C;&#x9501;&#x5177;&#x7684;&#x53D1;&#x5C55;&#xFF0C;&#x4ECE;&#x67D0;&#x4E2A;&#x7A0B;&#x5EA6;&#x4E0A;&#x4E5F;&#x4F53;&#x73B0;&#x51FA;&#x4E86;&#x79D1;&#x5B66;&#x6280;&#x672F;&#x7684;&#x8FDB;&#x6B65;&#x3002;  </p>
+<p>&#x9501;&#x7684;&#x76EE;&#x7684;&#x662F;&#x4FDD;&#x62A4;&#x8D22;&#x4EA7;&#x548C;&#x4EBA;&#x8EAB;&#x5B89;&#x5168;&#xFF0C;&#x6B63;&#x56E0;&#x5982;&#x6B64;&#xFF0C;&#x9501;&#x5177;&#x7684;&#x5B89;&#x5168;&#x4E0E;&#x5207;&#x8EAB;&#x5229;&#x76CA;&#x662F;&#x7D27;&#x5BC6;&#x76F8;&#x5173;&#x7684;&#xFF0C;&#x4ECE;&#x53E4;&#x81F3;&#x4ECA;&#xFF0C;&#x5BF9;&#x9501;&#x5177;&#x7684;&#x653B;&#x9632;&#x5C31;&#x4ECE;&#x672A;&#x505C;&#x6B62;&#x8FC7;&#x3002;&#x53E4;&#x6765;&#x5C31;&#x6709;&#x6881;&#x4E0A;&#x541B;&#x5B50;&#x6E9C;&#x95E8;&#x64AC;&#x9501;&#x7684;&#x8BB0;&#x8F7D;&#xFF0C;&#x5404;&#x7C7B;&#x5F00;&#x9501;&#x5DE5;&#x5177;&#x968F;&#x7740;&#x9501;&#x7684;&#x53D1;&#x5C55;&#x4E5F;&#x4E0D;&#x65AD;&#x63A8;&#x9648;&#x51FA;&#x65B0;&#xFF0C;&#x4ECE;&#x6700;&#x7B80;&#x5355;&#x7684;&#x5355;&#x52FE;&#x5230;&#x540E;&#x6765;&#x7684;&#x9521;&#x7EB8;&#x548C;&#x8F6F;&#x786C;&#x5F00;&#x5DE5;&#x5177;&#xFF0C;&#x9488;&#x5BF9;&#x4E0D;&#x540C;&#x9501;&#x5177;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5F00;&#x9501;&#x5DE5;&#x5177;&#xFF0C;&#x653B;&#x51FB;&#x9501;&#x7684;&#x601D;&#x8DEF;&#x4E0E;&#x4F20;&#x7EDF;&#x7684;&#x653B;&#x51FB;&#x7684;&#x601D;&#x8DEF;&#x5176;&#x5B9E;&#x662F;&#x5171;&#x901A;&#x7684;&#xFF0C;&#x5728;&#x4F20;&#x7EDF;&#x7684;&#x4FE1;&#x606F;&#x5B89;&#x5168;&#x4E2D;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x516C;&#x8BA4;&#x7684;&#x539F;&#x5219;&#xFF0C;&#x90A3;&#x5C31;&#x662F;&#x4E00;&#x5207;&#x5916;&#x90E8;&#x8F93;&#x5165;&#x90FD;&#x662F;&#x6709;&#x5BB3;&#x7684;&#xFF0C;&#x8D8A;&#x5B89;&#x5168;&#x6027;&#x7684;&#x7CFB;&#x7EDF;&#xFF0C;&#x5C01;&#x95ED;&#x6027;&#x5C31;&#x8D8A;&#x5F3A;&#xFF0C;web&#x653B;&#x51FB;&#x7684;&#x601D;&#x8DEF;&#x5C31;&#x662F;&#x627E;&#x8F93;&#x5165;&#x70B9;&#xFF0C;&#x627E;&#x6F0F;&#x6D1E;&#x5728;&#x6CE8;&#x5165;&#xFF0C;&#x9501;&#x5177;&#x7834;&#x89E3;&#x540C;&#x7406;&#xFF0C;&#x901A;&#x8FC7;&#x66B4;&#x9732;&#x5728;&#x5916;&#x7684;&#x9501;&#x5B54;&#x3001;&#x9501;&#x67F1;&#x3001;&#x9501;&#x4F53;&#x3001;&#x6309;&#x952E;&#x7B49;&#x7B49;&#xFF0C;&#x627E;&#x4E00;&#x5207;&#x53EF;&#x4EE5;&#x8F93;&#x5165;&#x7684;&#x70B9;&#xFF0C;&#x7ED3;&#x5408;&#x7279;&#x5B9A;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x4F7F;&#x5F39;&#x73E0;&#x590D;&#x4F4D;&#x6216;&#x62E8;&#x52A8;&#x9501;&#x4F53;&#xFF0C;&#x5B9E;&#x73B0;&#x7834;&#x89E3;&#x76EE;&#x7684;&#x3002;</p>
+<p>&#x5728;&#x6211;&#x56FD;&#xFF0C;&#x6839;&#x636E;&#x516C;&#x5B89;&#x90E8;&#x95E8;&#x5728;1994&#x5E74;&#x9881;&#x5E03;&#x7684; GA/T73-94 &#x300A;&#x673A;&#x68B0;&#x9632;&#x76D7;&#x9501;&#x300B;&#x6807;&#x51C6;&#x89C4;&#x5B9A;&#x3002;&#x4ECE;&#x6280;&#x672F;&#x5F00;&#x542F;&#x7684;&#x65F6;&#x957F;&#x6765;&#x786E;&#x5B9A;&#xFF0C;&#x9632;&#x76D7;&#x95E8;&#x9501;&#x5206;&#x4E3A;&#x4E24;&#x4E2A;&#x7B49;&#x7EA7;&#xFF1A;A&#x7EA7;&#x9501;&#x3001;B&#x7EA7;&#x9501;&#xFF0C;&#x5728;&#x6C11;&#x95F4;&#x56E0;&#x9501;&#x5177;&#x4F01;&#x4E1A;&#x7684;&#x5BA3;&#x4F20;&#x9020;&#x52BF;&#xFF0C;&#x5B58;&#x5728;&#x6709;&#x8D85; B &#x7EA7;&#x3001;C &#x7EA7;&#x9501;&#x7684;&#x8BF4;&#x6CD5;&#xFF0C;&#x56FD;&#x5BB6;&#x5C1A;&#x4E0D;&#x627F;&#x8BA4;&#x8FD9;&#x4E24;&#x4E2A;&#x5206;&#x7EA7;&#x3002;&#x968F;&#x7740;&#x6280;&#x672F;&#x8FDB;&#x6B65;&#xFF0C;&#x9501;&#x5177;&#x7684;&#x9632;&#x76D7;&#x6C34;&#x5E73;&#x4E5F;&#x968F;&#x7740;&#x63D0;&#x9AD8;&#xFF0C;&#x7136;&#x800C;&#x76EE;&#x524D;&#x5E02;&#x9762;&#x4E0A;&#x5927;&#x90E8;&#x5206;&#x9501;&#x5177;&#x90FD;&#x5B58;&#x5728;&#x6280;&#x672F;&#x5F00;&#x542F;&#x7684;&#x53EF;&#x80FD;&#x3002;</p>
+<p>&#x968F;&#x7740;&#x7269;&#x8054;&#x7F51;&#x5404;&#x7C7B;&#x6280;&#x672F;&#x7684;&#x9010;&#x6B65;&#x8FDB;&#x6B65;&#xFF0C;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x7684;&#x667A;&#x80FD;&#x8BBE;&#x5907;&#x51FA;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x751F;&#x6D3B;&#x4E2D;&#xFF0C;&#x667A;&#x80FD;&#x9501;&#x4F5C;&#x4E3A;&#x667A;&#x80FD;&#x5BB6;&#x5C45;&#x5E02;&#x573A;&#x4E0A;&#x53D1;&#x5C55;&#x6700;&#x4E3A;&#x8FC5;&#x901F;&#x7684;&#x54C1;&#x7C7B;&#x4E4B;&#x4E00;&#xFF0C;&#xB7;&#x5728;&#x9501;&#x5177;&#x5E02;&#x573A;&#x4E0A;&#x6240;&#x5360;&#x7684;&#x4EFD;&#x989D;&#x4F1A;&#x8D8A;&#x6765;&#x8D8A;&#x5927;&#xFF0C;&#x751A;&#x81F3;&#x8D85;&#x8FC7;&#x4F20;&#x7EDF;&#x9501;&#xFF0C;&#x6210;&#x4E3A;&#x4E3B;&#x6D41;&#xFF0C;&#x800C;&#x667A;&#x80FD;&#x9501;&#x53EF;&#x80FD;&#x66B4;&#x9732;&#x7684;&#x5B89;&#x5168;&#x95EE;&#x9898;&#x6BD4;&#x4F20;&#x7EDF;&#x673A;&#x68B0;&#x9501;&#x66F4;&#x5927;&#xFF0C;&#x673A;&#x68B0;&#x9501;&#x5177;&#x7684;&#x653B;&#x51FB;&#x70B9;&#x4E3B;&#x8981;&#x5728;&#x9501;&#x82AF;&#x548C;&#x9501;&#x4F53;&#x7ED3;&#x6784;&#xFF0C;&#x800C;&#x667A;&#x80FD;&#x9501;&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;&#x6D89;&#x53CA;&#x5230;&#x4E91;&#x7AEF;&#x901A;&#x4FE1;&#x3001;&#x79FB;&#x52A8;&#x7AEF;&#x3001;&#x96C6;&#x6210;&#x7535;&#x8DEF;&#x6A21;&#x5757;&#x3001;&#x6307;&#x7EB9;&#x3001;&#x58F0;&#x7EB9;&#x3001;&#x56FE;&#x50CF;&#x8BC6;&#x522B;&#x3001;RFID &#x7B49;&#x7B49;&#x5173;&#x952E;&#x6280;&#x672F;&#xFF0C;&#x66B4;&#x9732;&#x7684;&#x653B;&#x51FB;&#x70B9;&#x66F4;&#x591A;&#xFF0C;&#x653B;&#x51FB;&#x65B9;&#x5F0F;&#x66F4;&#x52A0;&#x9690;&#x853D;&#xFF0C;&#x53EF;&#x80FD;&#x9020;&#x6210;&#x7684;&#x5371;&#x5BB3;&#x66F4;&#x5927;&#xFF0C;&#x53E6;&#x5916;&#x8BB8;&#x591A;&#x667A;&#x80FD;&#x9501;&#x5382;&#x5546;&#x5E76;&#x975E;&#x4F20;&#x7EDF;&#x9501;&#x5177;&#x5382;&#x5546;&#x8F6C;&#x578B;&#x8FC7;&#x6765;&#x7684;&#xFF0C;&#x5728;&#x9501;&#x5177;&#x751F;&#x4EA7;&#x52A0;&#x5DE5;&#x5236;&#x9020;&#x4E0A;&#xFF0C;&#x66F4;&#x5BB9;&#x6613;&#x9020;&#x6210;&#x673A;&#x68B0;&#x548C;&#x8BBE;&#x8BA1;&#x7ED3;&#x6784;&#x4E0A;&#x7684;&#x7269;&#x7406;&#x7F3A;&#x9677;&#xFF0C;&#x662F;&#x667A;&#x80FD;&#x9501;&#x5B89;&#x5168;&#x95EE;&#x9898;&#x4E0D;&#x53EF;&#x5FFD;&#x89C6;&#x7684;&#x4E00;&#x73AF;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../chip-security/" class="navigation navigation-prev " aria-label="Previous page: 4.芯片安全">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../physicals-security/" class="navigation navigation-next " aria-label="Next page: 6.物理安全">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"5.锁具安全","level":"1.6","depth":1,"next":{"title":"6.物理安全","level":"1.7","depth":1,"path":"physicals-security/index.md","ref":"physicals-security/index.md","articles":[]},"previous":{"title":"4.芯片安全","level":"1.5","depth":1,"path":"chip-security/index.md","ref":"chip-security/index.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-livereload","image-captions","github","editlink","favicon","baidu","easyseo-7dtime"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/yaseng/iot-security-wiki"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/yaseng/iot-security-wiki/blob/master/"},"search":{},"easyseo-7dtime":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"_assets/images/favicon.ico","bookmark":"_assets/images/favicon.ico","appleTouch":"_assets/images/favicon.ico"},"baidu":{"token":"aaaa"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"attributes":{"width":"600"},"caption":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Yaseng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"title":"物联网安全百科","language":"zh-hans","links":{"sidebar":{"物联网安全百科":"http://iot-security.wiki"}},"gitbook":"*","description":"物联网安全开源图书","theme-default":{"showLevel":true}},"file":{"path":"lock-security/index.md","mtime":"2018-07-05T18:32:48.758Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-05T19:01:55.530Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,749 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.5.1 串口调试 · 物联网安全百科</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Yaseng">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="jtag.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    
+        <link rel="shortcut icon" href='../../_assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../_assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../_assets/images/favicon.ico'>
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://iot-security.wiki" target="_blank" class="custom-link">物联网安全百科</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../basics/">
+            
+                <a href="../../basics/">
+            
+                    
+                    1. 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../basics/iot.html">
+            
+                <a href="../../basics/iot.html">
+            
+                    
+                    1.1 物联网介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    2. 硬件安全
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../introduction.html">
+            
+                <a href="../introduction.html">
+            
+                    
+                    2.1 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../hardware/">
+            
+                <a href="../hardware/">
+            
+                    
+                    2.2 硬件分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../hardware/preliminary.html">
+            
+                <a href="../hardware/preliminary.html">
+            
+                    
+                    2.2.1 初探
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../hardware/circuit.html">
+            
+                <a href="../hardware/circuit.html">
+            
+                    
+                    2.2.2 电路分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../firmware/">
+            
+                <a href="../firmware/">
+            
+                    
+                    2.3 固件分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../firmware/extraction.html">
+            
+                <a href="../firmware/extraction.html">
+            
+                    
+                    2.3.1 固件提取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../firmware/reverse.html">
+            
+                <a href="../firmware/reverse.html">
+            
+                    
+                    2.3.2 固件逆向
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../protocol/">
+            
+                <a href="../protocol/">
+            
+                    
+                    2.4 协议分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../protocol/network.html">
+            
+                <a href="../protocol/network.html">
+            
+                    
+                    2.4.1 网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../protocol/USB.html">
+            
+                <a href="../protocol/USB.html">
+            
+                    
+                    2.4.2 USB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../protocol/others.html">
+            
+                <a href="../protocol/others.html">
+            
+                    
+                    2.4.3 其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    2.5 硬件调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.5.1" data-path="serial-port.html">
+            
+                <a href="serial-port.html">
+            
+                    
+                    2.5.1 串口调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="jtag.html">
+            
+                <a href="jtag.html">
+            
+                    
+                    2.5.2 JTAG调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="remote.html">
+            
+                <a href="remote.html">
+            
+                    
+                    2.5.3 远程调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../modification/">
+            
+                <a href="../modification/">
+            
+                    
+                    2.6 硬件修改
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../modification/hardware.html">
+            
+                <a href="../modification/hardware.html">
+            
+                    
+                    2.6.1 硬改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../modification/firmware.html">
+            
+                <a href="../modification/firmware.html">
+            
+                    
+                    2.6.2 软改
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../vulnerability/">
+            
+                <a href="../vulnerability/">
+            
+                    
+                    2.7 漏洞挖掘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../protection/">
+            
+                <a href="../protection/">
+            
+                    
+                    2.8 安全防护
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../cases/">
+            
+                <a href="../cases/">
+            
+                    
+                    2.9 综合案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../radio-security/">
+            
+                <a href="../../radio-security/">
+            
+                    
+                    3.无线电安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../chip-security/">
+            
+                <a href="../../chip-security/">
+            
+                    
+                    4.芯片安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../lock-security/">
+            
+                <a href="../../lock-security/">
+            
+                    
+                    5.锁具安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../physicals-security/">
+            
+                <a href="../../physicals-security/">
+            
+                    
+                    6.物理安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../appendix/">
+            
+                <a href="../../appendix/">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >2.5.1 串口调试</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4E32;&#x53E3;&#x8C03;&#x8BD5;">&#x4E32;&#x53E3;&#x8C03;&#x8BD5;</h1>
+<h2 id="&#x524D;&#x8A00;">&#x524D;&#x8A00;</h2>
+<p>&#x4E0A;&#x8282;&#x4ECB;&#x7ECD;&#x4E86;&#x5173;&#x4E8E;&#x901A;&#x8FC7;&#x7F16;&#x7A0B;&#x5668;&#x76F4;&#x63A5;&#x8BFB;&#x53D6;&#x82AF;&#x7247;&#x83B7;&#x53D6;&#x56FA;&#x4EF6;&#x7528;&#x6765;&#x9759;&#x6001;&#x5206;&#x6790;&#x7684;&#x4E00;&#x70B9;&#x601D;&#x8DEF;&#xFF0C;&#x672C;&#x7BC7;&#x5C06;&#x4ECB;&#x7ECD;&#x901A;&#x8FC7; UART &#x4E32;&#x53E3;&#x6765;&#x76F4;&#x63A5;&#x4E0E;&#x673A;&#x5668;&#x4EA4;&#x4E92;&#xFF0C;&#x901A;&#x8FC7;&#x4E32;&#x53E3;&#x8F93;&#x51FA;&#x8F93;&#x5165;&#x4FE1;&#x606F;&#xFF0C;&#x505A;&#x52A8;&#x6001;&#x8C03;&#x8BD5;&#x3002;
+&#x901A;&#x7528;&#x5F02;&#x6B65;&#x6536;&#x53D1;&#x4F20;&#x8F93;&#x5668;&#xFF08;Universal Asynchronous Receiver/Transmitter)&#xFF0C;&#x901A;&#x5E38;&#x79F0;&#x4F5C; UART &#xFF0C;&#x662F;&#x4E00;&#x79CD;&#x5F02;&#x6B65;&#x6536;&#x53D1;&#x4F20;&#x8F93;&#x5668;&#xFF0C;&#x662F;&#x7535;&#x8111;&#x786C;&#x4EF6;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;&#x5B83;&#x5C06;&#x8981;&#x4F20;&#x8F93;&#x7684;&#x8D44;&#x6599;&#x5728;&#x4E32;&#x884C;&#x901A;&#x4FE1;&#x4E0E;&#x5E76;&#x884C;&#x901A;&#x4FE1;&#x4E4B;&#x95F4;&#x52A0;&#x4EE5;&#x8F6C;&#x6362;&#x3002;&#x4F5C;&#x4E3A;&#x628A;&#x5E76;&#x884C;&#x8F93;&#x5165;&#x4FE1;&#x53F7;&#x8F6C;&#x6210;&#x4E32;&#x884C;&#x8F93;&#x51FA;&#x4FE1;&#x53F7;&#x7684;&#x82AF;&#x7247;&#xFF0C; UART &#x901A;&#x5E38;&#x88AB;&#x96C6;&#x6210;&#x4E8E;&#x5176;&#x4ED6;&#x901A;&#x8BAF;&#x63A5;&#x53E3;&#x7684;&#x8FDE;&#x7ED3;&#x4E0A;&#x3002;
+&#x5BF9;&#x4E8E;&#x7269;&#x8054;&#x7F51;&#x786C;&#x4EF6;&#x7684;&#x4E32;&#x53E3;&#x8C03;&#x8BD5;&#xFF0C;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#x6307;&#x7684;&#x5C31;&#x662F;&#x901A;&#x8FC7; UART &#x4E32;&#x53E3;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x901A;&#x8BAF;&#xFF0C; &#x4F46;&#x662F;&#x6211;&#x4EEC;&#x7ECF;&#x5E38;&#x641E;&#x4E0D;&#x6E05;&#x695A;&#x5B83;&#x548C;COM&#x53E3;&#x7684;&#x533A;&#x522B;,  &#x4EE5;&#x53CA; RS232, TTL &#x7B49;&#x5173;&#x7CFB;,             &#x5B9E;&#x9645;&#x4E0A; UART &#x3001;COM &#x6307;&#x7684;&#x7269;&#x7406;&#x63A5;&#x53E3;&#x5F62;&#x5F0F;(&#x786C;&#x4EF6;), &#x800C; TTL&#x3001;RS-232 &#x662F;&#x6307;&#x7684;&#x7535;&#x5E73;&#x6807;&#x51C6;(&#x7535;&#x4FE1;&#x53F7;).
+ UART &#x6709;4&#x4E2A;pin&#xFF08;VCC, GND , RX, TX&#xFF09;, &#x7528;&#x7684;TTL&#x7535;&#x5E73;&#xFF0C; &#x4F4E;&#x7535;&#x5E73;&#x4E3A;0(0V)&#x3001;&#x9AD8;&#x7535;&#x5E73;&#x4E3A;1&#xFF08;3.3V&#x6216;&#x4EE5;&#x4E0A;&#xFF09;&#xFF0C; UART &#x4E32;&#x53E3;&#x7684; RXD&#x3001;TXD &#x7B49;&#x4E00;&#x822C;&#x76F4;&#x63A5;&#x4E0E;&#x5904;&#x7406;&#x5668;&#x82AF;&#x7247;&#x7684;&#x5F15;&#x811A;&#x76F8;&#x8FDE;&#xFF0C;&#x800C;RS232&#x4E32;&#x53E3;&#x7684; RXD&#x3001;TXD &#x7B49;&#x4E00;&#x822C;&#x9700;&#x8981;&#x7ECF;&#x8FC7;&#x7535;&#x5E73;&#x8F6C;&#x6362;(&#x901A;&#x5E38;&#x7531; Max232 &#x7B49;&#x82AF;&#x7247;&#x8FDB;&#x884C;&#x7535;&#x5E73;&#x8F6C;&#x6362;)&#x624D;&#x80FD;&#x63A5;&#x5230;&#x5904;&#x7406;&#x5668;&#x82AF;&#x7247;&#x7684;&#x5F15;&#x811A;&#x4E0A;&#xFF0C;&#x5426;&#x5219;&#x8FD9;&#x4E48;&#x9AD8;&#x7684;&#x7535;&#x538B;&#x5F88;&#x53EF;&#x80FD;&#x4F1A;&#x628A;&#x82AF;&#x7247;&#x70E7;&#x574F;&#x3002;
+ &#x5728;&#x8C03;&#x8BD5;&#x7684;&#x65F6;&#x5019;, &#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#x6211;&#x4EEC;&#x53EA;&#x5F15;&#x51FA; rx&#x3001;tx&#x3001; GND &#x5373;&#x53EF;&#xFF0C;&#x4F46;&#x662F; UART &#x7684;&#x6570;&#x636E;&#x8981;&#x4F20;&#x5230;&#x7535;&#x8111;&#x4E0A;&#x5206;&#x6790;&#x5C31;&#x8981;&#x5339;&#x914D;&#x7535;&#x8111;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x901A;&#x5E38;&#x6211;&#x4EEC;&#x7535;&#x8111;&#x4F7F;&#x7528;&#x63A5;&#x53E3;&#x6709;COM&#x53E3;&#x548C;USB&#x53E3;&#xFF08;&#x6700;&#x7EC8;&#x5728;&#x7535;&#x8111;&#x4E0A;&#x662F;&#x4E00;&#x4E2A;&#x865A;&#x62DF;&#x7684;COM&#x53E3;&#xFF09;&#xFF0C;&#x4F46;&#x662F;&#x8981;&#x60F3;&#x8FDE;&#x4E0A;&#x8FD9;&#x4E24;&#x79CD;&#x63A5;&#x53E3;&#x90FD;&#x8981;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x786C;&#x4EF6;&#x63A5;&#x53E3;&#x8F6C;&#x6362;&#x548C;&#x7535;&#x5E73;&#x8F6C;&#x6362;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image32.jpg" alt=""></p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image33.jpg" alt=""></p>
+<h2 id="uart-&#x4E32;&#x53E3;&#x8C03;&#x8BD5;">UART &#x4E32;&#x53E3;&#x8C03;&#x8BD5;</h2>
+<p> UART &#x8C03;&#x8BD5;&#x7B2C;&#x4E00;&#x6B65;&#x9700;&#x8981;&#x5148;&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684;&#x56DB;&#x4E2A;PIN&#xFF0C;&#x5728;&#x901A;&#x7535;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;VCC &#x53E3;&#x53EF;&#x4EE5;&#x4E0D;&#x8981;&#x63A5;&#xFF0C;&#x5224;&#x65AD; GND , RX, TX &#x4E09;&#x4E2A;&#x5F15;&#x811A;&#x662F;&#x8C03;&#x8BD5;&#x7684;&#x5173;&#x952E;&#xFF0C;&#x627E;&#x56DB;&#x4E2A;&#x5F15;&#x811A;&#x53EF;&#x4EE5;&#x5148;&#x770B; PCB&#x4E0A;&#x7684;&#x5370;&#x5B57;&#x3002;
+<img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image65.jpg" alt=""></p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image66.jpg" alt=""></p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image67.jpg" alt=""></p>
+<p>&#x4F46;&#x591A;&#x6570;&#x5382;&#x5546;&#x5728;&#x91CF;&#x4EA7;&#x524D;&#x4F1A;&#x53BB;&#x6389;&#x7528;&#x4E8E;&#x8C03;&#x8BD5;&#x7684;&#x4E32;&#x53E3;&#x5370;&#x5B57;&#xFF0C;&#x5982;&#x679C;&#x627E;&#x4E0D;&#x5230;&#x5BF9;&#x5E94;&#x5F15;&#x811A;&#x7684;&#x5370;&#x5B57;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x5148;&#x5206;&#x6790; PCB &#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x4E00;&#x822C; PCB &#x4E0A;&#x6709;3&#x3001;4 &#x3001;5&#x4E2A;&#x5E76;&#x6392;&#x6216;&#x76F8;&#x8DDD;&#x4E0D;&#x8FDC;&#x7684;&#x710A;&#x70B9;&#x6216;&#x901A;&#x5B54;&#xFF0C;&#x5C31;&#x6709;&#x53EF;&#x80FD;&#x662F; UART &#x8C03;&#x8BD5;&#x4E32;&#x53E3;&#x3002;
+<img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image68.jpg" alt=""></p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image69.jpg" alt=""></p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image70.jpg" alt=""></p>
+<p>&#x4F46; PCB &#x4E0A;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x591A;&#x4E2A;&#x8FD9;&#x6837;&#x7684;&#x710A;&#x70B9;&#x6216;&#x901A;&#x5B54;&#xFF0C;&#x4ECE;&#x591A;&#x4E2A;&#x53E3;&#x4E2D;&#x627E;&#x51FA;&#x771F;&#x6B63;&#x7684;&#x8C03;&#x8BD5;&#x4E32;&#x53E3;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x501F;&#x52A9;&#x5230;&#x4E07;&#x7528;&#x8868;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image101.jpg" alt=""></p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image102.jpg" alt=""></p>
+<p>&#x4E07;&#x7528;&#x8868;&#x627E;&#x4E32;&#x53E3;&#x9996;&#x5148;&#x9700;&#x8981;&#x627E;&#x5230; GND &#x53E3;&#xFF0C;&#x5C31;&#x662F;&#x63A5;&#x5730;&#x53E3;&#xFF0C;&#x5728;&#x7591;&#x4F3C;&#x4E32;&#x53E3;&#x7684;&#x710A;&#x70B9;&#x5904;&#xFF0C;&#x901A;&#x8FC7;&#x6D4B;&#x91CF;&#x7535;&#x52BF;&#x5DEE;&#xFF0C;&#x53EF;&#x4EE5;&#x5224;&#x65AD;&#x51FA; GND &#x53E3;&#xFF0C;&#x901A;&#x8FC7;&#x8FDE;&#x63A5;&#x710A;&#x70B9;&#x548C;&#x8F93;&#x5165;&#x8D1F;&#x6781;&#xFF0C;&#x5982;&#x679C;&#x7535;&#x52BF;&#x4E3A;0&#xFF0C;&#x5C31;&#x53EF;&#x80FD;&#x662F; GND &#x53E3;&#xFF0C;&#x5982;&#x679C;&#x7535;&#x52BF;&#x4E3A;&#x6700;&#x5927;&#x503C;&#xFF0C;&#x4F8B;&#x5982; 3.6V&#x3001;5V &#x7B49;&#xFF0C;&#x5C31;&#x53EF;&#x80FD;&#x662F; VCC &#x53E3;&#x3002;&#x7136;&#x540E;&#x901A;&#x8FC7; UART &#x8F6C;&#x6362;&#x5668;&#x5BF9;&#x5E94;&#x7684;4&#x4E2A;&#x53E3;&#xFF0C;&#x5F15;&#x51FA;&#x5BFC;&#x7EBF;&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E;&#x597D;&#x4E32;&#x53E3;&#x8F93;&#x51FA;&#x73AF;&#x5883;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x4F9D;&#x6B21;&#x5C1D;&#x8BD5;&#x3002;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x77ED;&#x63A5;&#x5176;&#x4E2D;&#x7684;&#x4E24;&#x53E3;&#xFF0C;&#x5982;&#x679C;&#x673A;&#x5668;&#x91CD;&#x542F;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5224;&#x65AD;&#x8FD9;&#x4E24;&#x53E3;&#x4E3A;VCC&#x548C; GND &#x3002;
+&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x5728; TTL &#x7535;&#x5E73;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;UART &#x8F6C;&#x6362;&#x63A5;&#x53E3;&#x4E0A;&#x7684; RX&#x3001;TX &#x53E3;&#x4E0E;&#x4E0A;&#x4F4D;&#x8BBE;&#x5907;&#xFF0C;&#x4E5F;&#x5C31;&#x662F; PCB &#x4E0A;&#x7684; UART &#x53E3;&#x7684;RX&#x548C;TX&#x662F;&#x9700;&#x8981;&#x53CD;&#x63A5;&#x7684;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image71.jpg" alt=""></p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image72.jpg" alt=""></p>
+<h3 id="&#x6848;&#x4F8B;&#x4E00;&#xFF1A;&#x8C03;&#x8BD5;&#x67D0;&#x667A;&#x80FD;&#x6444;&#x50CF;&#x5934;">&#x6848;&#x4F8B;&#x4E00;&#xFF1A;&#x8C03;&#x8BD5;&#x67D0;&#x667A;&#x80FD;&#x6444;&#x50CF;&#x5934;</h3>
+<p>&#x901A;&#x8FC7;&#x4E07;&#x7528;&#x8868;&#x6D4B;&#x91CF;&#x7535;&#x52BF;&#x5DEE;&#x4E4B;&#x540E;&#xFF0C;&#x5728;&#x9760;&#x8FD1; CPU &#x7684;&#x5730;&#x65B9;&#x6709;&#x4E09;&#x4E2A;&#x901A;&#x5B54;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x662F; UART &#x4E32;&#x53E3;&#xFF0C;&#x7528;&#x5BFC;&#x7EBF;&#x8FDE;&#x63A5;&#x4E4B;&#x540E;&#xFF0C;&#x8BBE;&#x7F6E;&#x6CE2;&#x7279;&#x7387;&#x4E3A; 115200&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image73.jpg" alt=""></p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image35.jpg" alt=""></p>
+<p>&#x7528; SecureCRT &#x8FDE;&#x63A5;&#x4E32;&#x53E3;&#xFF0C;&#x7ED9;&#x673A;&#x5668;&#x901A;&#x4E0A;&#x7535;&#x4E4B;&#x540E;&#xFF0C;&#x4E32;&#x53E3;&#x7ACB;&#x9A6C;&#x8F93;&#x51FA;&#x4E86;&#x542F;&#x52A8;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x8BF4;&#x660E;&#x4E32;&#x53E3;&#x6B63;&#x786E;&#xFF0C;&#x5982;&#x679C;&#x9047;&#x5230;&#x65E0;&#x6CD5;&#x8F93;&#x5165;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x9996;&#x5148;&#x68C0;&#x67E5;&#x63A5;&#x7EBF;&#x662F;&#x5426;&#x677E;&#x52A8;&#xFF0C;&#x7136;&#x540E;&#x5728; SecureCRT &#x4E2D;&#x7684;&#xFF0C; Session Options -&gt; Connection -&gt; Serial -&gt; Flow Control&#xFF0C;&#x5C06;&#x539F;&#x5148;&#x9009;&#x4E2D;&#x7684; RTS/CTS &#x53D6;&#x6D88;&#x6389;&#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x5982;&#x679C;&#x9009;&#x4E2D;&#x4E86; RTS/CTS &#xFF0C;&#x5219;&#x786C;&#x4EF6;&#x4E0A;&#x8981;&#x6709;&#x5BF9;&#x5E94;&#x63A5;&#x53E3;&#xFF0C;&#x8F6F;&#x4EF6;&#x4E0A;&#x5B9E;&#x73B0;&#x5BF9;&#x5E94;&#x534F;&#x8BAE;&#xFF0C;&#x624D;&#x80FD;&#x5B9E;&#x73B0;&#x6B64;&#x6D41;&#x63A7;&#x5236;&#x3002;&#x5982;&#x679C;&#x4E32;&#x53E3;&#x8F93;&#x51FA;&#x4E3A;&#x4E71;&#x7801;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x5207;&#x6362;&#x6CE2;&#x7279;&#x7387;&#xFF0C;&#x76F4;&#x81F3;&#x8F93;&#x51FA;&#x6B63;&#x5E38;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image74.jpg" alt=""></p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image75.jpg" alt=""></p>
+<h3 id="&#x6848;&#x4F8B;&#x4E8C;&#xFF1A;&#x8C03;&#x8BD5;&#x67D0;&#x8DEF;&#x7531;&#x5668;">&#x6848;&#x4F8B;&#x4E8C;&#xFF1A;&#x8C03;&#x8BD5;&#x67D0;&#x8DEF;&#x7531;&#x5668;</h3>
+<p>&#x5728;&#x9760;&#x8FD1;cpu&#x7684;&#x5730;&#x65B9;&#x6709;&#x56DB;&#x4E2A;&#x901A;&#x5B54;&#xFF0C;&#x6D4B;&#x91CF;&#x7535;&#x52BF;&#x5DEE;&#x540E;&#xFF0C;&#x5229;&#x7528;&#x5BFC;&#x7EBF;&#x63A2;&#x9488;&#xFF0C;&#x786E;&#x5B9A;&#x4E86;&#x4E09;&#x4E2A; PIN&#xFF0C;&#x8FDE;&#x63A5;&#x8F6C;&#x6362;&#x5668;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image76.jpg" alt=""></p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image77.jpg" alt=""></p>
+<p>&#x4E32;&#x53E3;&#x4E2D;&#x8F93;&#x51FA;&#x8C03;&#x8BD5;&#x4FE1;&#x606F;&#xFF0C;&#x56E0;&#x6CE2;&#x7279;&#x7387;&#x8BBE;&#x7F6E;&#x95EE;&#x9898;&#xFF0C;&#x521D;&#x59CB;&#x8F93;&#x51FA;&#x4E3A;&#x4E71;&#x7801;&#xFF0C;&#x6539;&#x4E3A; 38400 &#x5373;&#x53EF;&#x6B63;&#x5E38;&#x8F93;&#x51FA;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image78.jpg" alt=""></p>
+<h3 id="&#x6848;&#x4F8B;&#x4E09;&#xFF1A;&#x8C03;&#x8BD5;&#x67D0;&#x8DEF;&#x7531;&#x5668;">&#x6848;&#x4F8B;&#x4E09;&#xFF1A;&#x8C03;&#x8BD5;&#x67D0;&#x8DEF;&#x7531;&#x5668;</h3>
+<p>&#x5728; PCB &#x4E0A;&#x6709;&#x56DB;&#x4E2A;&#x710A;&#x70B9;&#xFF0C;&#x5148;&#x6D4B;&#x91CF;&#x7535;&#x52BF;&#x5DEE;&#xFF0C;&#x5206;&#x51FA; GND &#x548C;VCC&#xFF0C;&#x5728;&#x5229;&#x7528;&#x710A;&#x67AA;&#x5206;&#x522B;&#x710A;&#x4E0A;&#x5BFC;&#x7EBF;&#xFF0C;&#x8FDE;&#x63A5;&#x8F6C;&#x6362;&#x63A5;&#x53E3;&#xFF0C;&#x6D4B;&#x8BD5;&#x51FA; TX &#x548C; RX &#x53E3;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image79.jpg" alt=""></p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image80.jpg" alt=""></p>
+<p>&#x8BBE;&#x7F6E;&#x6CE2;&#x7279;&#x7387;&#x4E3A;57600&#xFF0C;&#x4E32;&#x53E3;&#x8F93;&#x51FA;&#x6B63;&#x786E;&#xFF0C;&#x5E76;&#x53EF;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image81.jpg" alt=""></p>
+<h3 id="&#x6848;&#x4F8B;&#x56DB;&#xFF1A;&#x8C03;&#x8BD5;&#x67D0;&#x8DEF;&#x7531;&#x5668;">&#x6848;&#x4F8B;&#x56DB;&#xFF1A;&#x8C03;&#x8BD5;&#x67D0;&#x8DEF;&#x7531;&#x5668;</h3>
+<p>&#x5728; PCB &#x4E00;&#x4FA7;&#x6709;5&#x4E2A;&#x901A;&#x5B54;&#xFF0C;&#x5E76;&#x6807;&#x6CE8;&#x6709; UART -0&#x5B57;&#x6837;&#xFF0C;&#x901A;&#x7535;&#x540E;&#xFF0C;&#x6D4B;&#x8BD5;&#x5404;&#x53E3;&#x7535;&#x52BF;&#x5DEE;&#xFF0C;&#x786E;&#x5B9E; GND &#x548C; VCC &#x540E;&#xFF0C;&#x8FDE;&#x63A5;&#x8F6C;&#x6362;&#x63A5;&#x53E3;&#xFF0C;&#x5E76;&#x6D4B;&#x8BD5;&#x51FA; RX &#x548C; TX &#x53E3;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image82.jpg" alt=""></p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image83.jpg" alt=""></p>
+<p>&#x8BBE;&#x7F6E;&#x6CE2;&#x7279;&#x7387;&#x4E3A; 57600&#xFF0C;&#x4E32;&#x53E3;&#x8F93;&#x51FA;&#x6B63;&#x786E;&#xFF0C;&#x5E76;&#x53EF;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image84.jpg" alt=""></p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image85.jpg" alt=""></p>
+<p>&#x901A;&#x8FC7;&#x672C;&#x5730;&#x67B6;&#x8BBE;&#x7684; tftp &#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5E76;&#x5728;&#x4E32;&#x53E3;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF0C;&#x5F00;&#x542F;&#x76F8;&#x5173;&#x670D;&#x52A1;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; tftp &#x4E0E;&#x673A;&#x5668;&#x4F20;&#x8F93;&#x6587;&#x4EF6;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image86.jpg" alt=""></p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image87.jpg" alt=""></p>
+<h3 id="&#x6848;&#x4F8B;&#x4E94;&#xFF1A;&#x8C03;&#x8BD5;&#x67D0;&#x65E0;&#x7EBF;&#x6570;&#x636E;&#x7EC8;&#x7AEF;">&#x6848;&#x4F8B;&#x4E94;&#xFF1A;&#x8C03;&#x8BD5;&#x67D0;&#x65E0;&#x7EBF;&#x6570;&#x636E;&#x7EC8;&#x7AEF;</h3>
+<p>&#x62C6;&#x5F00;&#x6B63;&#x9762;&#x538B;&#x677F;&#xFF0C;&#x53D1;&#x73B0; PCB &#x4E0A;&#x6807;&#x6CE8;&#x6709;&#x5370;&#x5B57;&#xFF0C;&#x5229;&#x7528; PCB &#x5939;&#x5177;&#x548C;&#x63A2;&#x9488;&#xFF0C;&#x5F15;&#x51FA; RX &#x548C; TX &#x53E3;&#xFF0C;&#x8FDE;&#x63A5;&#x8F6C;&#x6362;&#x5668;&#xFF0C;&#x56E0;&#x8BE5;&#x65E0;&#x7EBF;&#x7EC8;&#x7AEF;&#x4E32;&#x53E3;&#x7535;&#x538B;&#x4E0D;&#x8D85;&#x8FC7; 1.7V&#xFF0C;&#x710A;&#x63A5;&#x5BB9;&#x6613;&#x9020;&#x6210;&#x4FE1;&#x53F7;&#x8870;&#x51CF;&#xFF0C;&#x56E0;&#x6B64;&#x91C7;&#x7528;&#x5939;&#x5177;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image88.jpg" alt=""></p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image89.jpg" alt="">
+&#x56E0;&#x4E32;&#x53E3;&#x8F93;&#x51FA;&#x4FE1;&#x606F;&#x8FC7;&#x591A;&#xFF0C;&#x5F71;&#x54CD;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF0C;&#x56E0;&#x6B64;&#x91C7;&#x7528;&#x4E32;&#x53E3;&#x8C03;&#x8BD5;&#x52A9;&#x624B;&#xFF0C;&#x8BBE;&#x7F6E;&#x6CE2;&#x7279;&#x7387;&#x4E3A; 115200&#xFF0C;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#x5E76;&#x53D1;&#x9001;&#xFF0C;&#x53EF;&#x4EE5;&#x6210;&#x529F;&#x6267;&#x884C;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image90.jpg" alt=""></p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image91.jpg" alt=""></p>
+<h3 id="&#x6848;&#x4F8B;&#x516D;&#xFF1A;&#x8C03;&#x8BD5;&#x67D0;&#x65E0;&#x7EBF;&#x6570;&#x636E;&#x7EC8;&#x7AEF;">&#x6848;&#x4F8B;&#x516D;&#xFF1A;&#x8C03;&#x8BD5;&#x67D0;&#x65E0;&#x7EBF;&#x6570;&#x636E;&#x7EC8;&#x7AEF;</h3>
+<p>&#x62C6;&#x89E3;&#x673A;&#x5668;&#xFF0C;&#x8BE5;&#x578B;&#x673A;&#x5668;&#x91C7;&#x7528;&#x591A;&#x5757;&#x7535;&#x8DEF;&#x677F;&#x5C42;&#x7EA7;&#x8BBE;&#x8BA1;&#xFF0C;&#x5176;&#x4E3B;&#x8981;&#x5904;&#x7406;&#x82AF;&#x7247;&#x4F4D;&#x4E8E;&#x9876;&#x90E8;&#xFF0C;&#x62C6;&#x89E3;&#x65F6;&#x6CE8;&#x610F;&#x8D70;&#x7EBF;&#x4F4D;&#x7F6E;&#xFF0C;&#x9632;&#x6B62;&#x62C9;&#x574F;&#x63A5;&#x7EBF;&#x53E3;&#xFF0C;&#x5728; PCB &#x4E0A;&#x6709; UART &#x7684; PIN &#x53E3;&#x5370;&#x5B57;&#xFF0C;&#x7ED9;&#x6BCF;&#x4E00;&#x4E2A; PIN &#x53E3;&#x710A;&#x4E0A;&#x5BFC;&#x7EBF;&#xFF0C;&#x8FDE;&#x63A5;&#x8F6C;&#x6362;&#x5668;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image122.jpg" alt=""></p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image123.jpg" alt=""></p>
+<p>&#x8BBE;&#x7F6E;&#x6CE2;&#x7279;&#x7387;&#x4E3A; 921600&#xFF0C;&#x8FDE;&#x63A5;&#x4E32;&#x53E3;&#xFF0C;&#x7528; root &#x8D26;&#x53F7;&#x767B;&#x9646;&#xFF0C;&#x5BC6;&#x7801;&#x4E3A;&#x7A7A;&#xFF0C;&#x6210;&#x529F;&#x8FDB;&#x5165;&#x7CFB;&#x7EDF;&#xFF0C;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image124.jpg" alt=""></p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/688535e77168b873/image125.jpg" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 2.5 硬件调试">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="jtag.html" class="navigation navigation-next " aria-label="Next page: 2.5.2 JTAG调试">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.5.1 串口调试","level":"1.3.5.1","depth":3,"next":{"title":"2.5.2 JTAG调试","level":"1.3.5.2","depth":3,"path":"hardware-security/debug/jtag.md","ref":"hardware-security/debug/jtag.md","articles":[]},"previous":{"title":"2.5 硬件调试","level":"1.3.5","depth":2,"path":"hardware-security/debug/index.md","ref":"hardware-security/debug/index.md","articles":[{"title":"2.5.1 串口调试","level":"1.3.5.1","depth":3,"path":"hardware-security/debug/serial-port.md","ref":"hardware-security/debug/serial-port.md","articles":[]},{"title":"2.5.2 JTAG调试","level":"1.3.5.2","depth":3,"path":"hardware-security/debug/jtag.md","ref":"hardware-security/debug/jtag.md","articles":[]},{"title":"2.5.3 远程调试","level":"1.3.5.3","depth":3,"path":"hardware-security/debug/remote.md","ref":"hardware-security/debug/remote.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","-livereload","image-captions","github","editlink","favicon","baidu","easyseo-7dtime"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/yaseng/iot-security-wiki"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/yaseng/iot-security-wiki/blob/master/"},"search":{},"easyseo-7dtime":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"_assets/images/favicon.ico","bookmark":"_assets/images/favicon.ico","appleTouch":"_assets/images/favicon.ico"},"baidu":{"token":"aaaa"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"attributes":{"width":"600"},"caption":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Yaseng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"title":"物联网安全百科","language":"zh-hans","links":{"sidebar":{"物联网安全百科":"http://iot-security.wiki"}},"gitbook":"*","description":"物联网安全开源图书","theme-default":{"showLevel":true}},"file":{"path":"hardware-security/debug/serial-port.md","mtime":"2018-07-05T18:44:14.354Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-05T19:01:55.530Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

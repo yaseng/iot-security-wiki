@@ -1,0 +1,767 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.4.1 网络 · 物联网安全百科</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Yaseng">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="USB.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    
+        <link rel="shortcut icon" href='../../_assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../_assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../_assets/images/favicon.ico'>
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://iot-security.wiki" target="_blank" class="custom-link">物联网安全百科</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../basics/">
+            
+                <a href="../../basics/">
+            
+                    
+                    1. 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../basics/iot.html">
+            
+                <a href="../../basics/iot.html">
+            
+                    
+                    1.1 物联网介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    2. 硬件安全
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../introduction.html">
+            
+                <a href="../introduction.html">
+            
+                    
+                    2.1 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../hardware/">
+            
+                <a href="../hardware/">
+            
+                    
+                    2.2 硬件分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../hardware/preliminary.html">
+            
+                <a href="../hardware/preliminary.html">
+            
+                    
+                    2.2.1 初探
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../hardware/circuit.html">
+            
+                <a href="../hardware/circuit.html">
+            
+                    
+                    2.2.2 电路分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../firmware/">
+            
+                <a href="../firmware/">
+            
+                    
+                    2.3 固件分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../firmware/extraction.html">
+            
+                <a href="../firmware/extraction.html">
+            
+                    
+                    2.3.1 固件提取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../firmware/reverse.html">
+            
+                <a href="../firmware/reverse.html">
+            
+                    
+                    2.3.2 固件逆向
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    2.4 协议分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.4.1" data-path="network.html">
+            
+                <a href="network.html">
+            
+                    
+                    2.4.1 网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="USB.html">
+            
+                <a href="USB.html">
+            
+                    
+                    2.4.2 USB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="others.html">
+            
+                <a href="others.html">
+            
+                    
+                    2.4.3 其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../debug/">
+            
+                <a href="../debug/">
+            
+                    
+                    2.5 硬件调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../debug/serial-port.html">
+            
+                <a href="../debug/serial-port.html">
+            
+                    
+                    2.5.1 串口调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../debug/jtag.html">
+            
+                <a href="../debug/jtag.html">
+            
+                    
+                    2.5.2 JTAG调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../debug/remote.html">
+            
+                <a href="../debug/remote.html">
+            
+                    
+                    2.5.3 远程调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../modification/">
+            
+                <a href="../modification/">
+            
+                    
+                    2.6 硬件修改
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../modification/hardware.html">
+            
+                <a href="../modification/hardware.html">
+            
+                    
+                    2.6.1 硬改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../modification/firmware.html">
+            
+                <a href="../modification/firmware.html">
+            
+                    
+                    2.6.2 软改
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../vulnerability/">
+            
+                <a href="../vulnerability/">
+            
+                    
+                    2.7 漏洞挖掘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../protection/">
+            
+                <a href="../protection/">
+            
+                    
+                    2.8 安全防护
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../cases/">
+            
+                <a href="../cases/">
+            
+                    
+                    2.9 综合案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../radio-security/">
+            
+                <a href="../../radio-security/">
+            
+                    
+                    3.无线电安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../chip-security/">
+            
+                <a href="../../chip-security/">
+            
+                    
+                    4.芯片安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../lock-security/">
+            
+                <a href="../../lock-security/">
+            
+                    
+                    5.锁具安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../physicals-security/">
+            
+                <a href="../../physicals-security/">
+            
+                    
+                    6.物理安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../appendix/">
+            
+                <a href="../../appendix/">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >2.4.1 网络</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7F51;&#x7EDC;">&#x7F51;&#x7EDC;</h1>
+<h2 id="&#x524D;&#x8A00;">&#x524D;&#x8A00;</h2>
+<p>&#x672C;&#x8282;&#x4E3B;&#x8981;&#x8BB2;&#x8FF0;&#x7269;&#x8054;&#x7F51;&#x5728;&#x7F51;&#x7EDC;&#x5C42;&#x534F;&#x8BAE;&#x7684;&#x5206;&#x6790;&#xFF0C;&#x5305;&#x62EC;&#x6570;&#x636E;&#x6293;&#x5305;&#x3001;&#x5206;&#x6790;&#x3001;&#x5B9A;&#x4F4D;&#x3001;&#x4FEE;&#x6539;&#x3001;&#x91CD;&#x653E;&#x7B49;&#x65B9;&#x5F0F;&#x3002;</p>
+<h2 id="&#x6293;&#x53D6;">&#x6293;&#x53D6;</h2>
+<p>&#x5728;&#x505A;&#x534F;&#x8BAE;&#x5206;&#x6790;&#x4E4B;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x6293;&#x5305;&#xFF0C;&#x8FD9;&#x91CC;&#x4ECB;&#x7ECD;&#x51E0;&#x79CD;&#x6293;&#x5305;&#x7684;&#x65B9;&#x5F0F;&#x3002;</p>
+<h3 id="&#x8DEF;&#x7531;&#x5668;&#x4E2D;">&#x8DEF;&#x7531;&#x5668;&#x4E2D;</h3>
+<p>&#x901A;&#x8FC7;&#x8DEF;&#x7531;&#x5668;&#x6293;&#x5305;&#x662F;&#x6700;&#x7A33;&#x5B9A;&#x6709;&#x6548;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x6811;&#x8393;&#x6D3E;&#x5237; openwrt &#xFF0C;&#x7136;&#x540E;&#x5916;&#x63A5; wifi &#x5929;&#x7EBF;&#xFF0C;&#x4E0D;&#x5916;&#x63A5;&#x5929;&#x7EBF;&#x7684;&#x8BDD;&#xFF0C;wifi &#x4FE1;&#x53F7;&#x8D28;&#x91CF;&#x548C;&#x4F20;&#x8F93;&#x8DDD;&#x79BB;&#x53EF;&#x80FD;&#x8F83;&#x5DEE;&#xFF0C;&#x6709;&#x5145;&#x5206;&#x9884;&#x7B97;&#x7684;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x9AD8;&#x914D;&#x7F6E;&#x7684; Netgear &#x6216; Linksys &#x8DEF;&#x7531;&#x5668;&#x5237; openwrt &#x8FDB;&#x884C;&#x6293;&#x5305;&#xFF0C;&#x6027;&#x80FD;&#x4F1A;&#x66F4;&#x597D;&#x3002;&#x7136;&#x540E;&#x4F7F;&#x7528; tcpdump &#x6293;&#x5305;&#x3002;
+&#x4F8B;&#x5982;&#x5BF9;&#x67D0;&#x4E2A;&#x6444;&#x50CF;&#x5934;&#x4E00;&#x4E9B;&#x901A;&#x8BAF;&#x6570;&#x636E;&#x7684;&#x6293;&#x5305;&#xFF0C;&#x6293;&#x53D6;&#x624B;&#x673A;&#x4E0E;&#x8BBE;&#x5907;&#x4E4B;&#x95F4;&#x7684;&#x4EA4;&#x4E92;&#x6570;&#x636E;&#x3002;</p>
+<pre><code class="lang-c">tcpdump host <span class="hljs-number">192.168</span><span class="hljs-number">.1</span><span class="hljs-number">.136</span> and  <span class="hljs-number">192.168</span><span class="hljs-number">.1</span><span class="hljs-number">.128</span>  -i wlan0  -w  <span class="hljs-number">1.</span>pcap
+</code></pre>
+<p>&#x901A;&#x8FC7; ftp &#x4F20;&#x8F93;&#x56DE;&#x6765;&#xFF0C;&#x6570;&#x636E;&#x5305;&#x4E3A;&#x4E00;&#x4E9B;&#x89C6;&#x9891;&#x6D41;&#x548C;&#x6307;&#x4EE4;  &#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b387f7ed43a7.jpg" alt=""></p>
+<h3 id="&#x79FB;&#x52A8;&#x8BBE;&#x5907;">&#x79FB;&#x52A8;&#x8BBE;&#x5907;</h3>
+<p>&#x5F53;&#x9047;&#x5230;&#x4F7F;&#x7528;&#x4E86; ssl &#x7684;&#x534F;&#x8BAE; &#x4F8B;&#x5982; HTTPS &#xFF0C;&#x6293;&#x5305;&#x83B7;&#x53D6;&#x4E0D;&#x5230;&#x660E;&#x6587;&#xFF0C;&#x8FD9;&#x65F6;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5982;&#x4E0B;&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x6293;&#x5305;&#xFF0C;&#x4F8B;&#x5982; Android &#x4E0B;&#x9762;&#x4F2A;&#x9020;&#x8BC1;&#x4E66;&#xFF0C;&#x7136;&#x540E; hook SSL Pinning &#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; Xposed &#x7684; JustTrustMe &#x6A21;&#x5757; &#xFF0C;&#x7136;&#x540E;&#x914D;&#x5408; mitmproxy &#x6293;&#x5305;&#x3002;&#x5BF9;&#x4E8E;&#x4E00;&#x4E9B;&#x8F83;&#x4E3A;&#x590D;&#x6742; &#x3001;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x52A0;&#x5BC6;&#x534F;&#x8BAE;&#x6765;&#x8BF4;&#xFF0C;hook &#x53D1;&#x5305;&#xFF0C;&#x6536;&#x5305;&#x6765;&#x83B7;&#x53D6;&#x6570;&#x636E;&#xFF0C;&#x4F1A;&#x5927;&#x5927;&#x7B80;&#x5316;&#x540E;&#x7EED;&#x7684;&#x5206;&#x6790;&#x6D41;&#x7A0B;&#x3002;&#x4F8B;&#x5982;&#x5206;&#x6790;&#x4E00;&#x4E2A; Android app &#x4E0E;&#x667A;&#x80FD;&#x6444;&#x50CF;&#x5934;&#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#xFF0C;&#x901A;&#x4FE1;&#x534F;&#x8BAE;&#x4E3A; TCP &#xFF0C;&#x9700;&#x8981; hook OutputStream write &#x51FD;&#x6570; &#x3002;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#x4E0D;&#x80FD; hook java.io.OutputStream &#x62BD;&#x8C61;&#x7C7B;&#xFF0C;&#x800C;&#x9700;&#x8981;&#x53BB; hook &#x5177;&#x4F53;&#x5B9E;&#x73B0;&#x7C7B;&#xFF0C;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x8DE8;&#x5E73;&#x53F0;&#x7684; Frida &#x5DE5;&#x5177;&#x6765; hook&#x3002;</p>
+<p>hook &#x4EE3;&#x7801;</p>
+<pre><code class="lang-js">Java.perform(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;[*] hook start...&quot;</span>)
+  h1 = Java.use(<span class="hljs-string">&quot;java.net.PlainSocketImpl$PlainSocketOutputStream&quot;</span>);
+  h1.write.overload(<span class="hljs-string">&apos;[B&apos;</span>, <span class="hljs-string">&apos;int&apos;</span>, <span class="hljs-string">&apos;int&apos;</span>).implementation = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a1, a2, a3</span>) </span>{
+
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;[+] hook PlainSocketOutputStream:write(byte[],int,int)&quot;</span>);
+    <span class="hljs-built_in">console</span>.log(a1, a2, a3);
+    send(<span class="hljs-string">&apos;data:&apos;</span>, <span class="hljs-keyword">new</span> <span class="hljs-built_in">Uint8Array</span>(a1));
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.write(a1, a2, a3);
+
+  }
+
+})
+</code></pre>
+<p>&#x6CE8;&#x5165;&#x76EE;&#x6807;&#x8FDB;&#x7A0B;
+frida  -H  192.168.1.128   -n  com.xxxx.xxxx   -l   tcpdump.js   --no-pause </p>
+<p>&#x7ED3;&#x679C;:
+<img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b3882c895003.jpg" alt=""></p>
+<p>&#x4E3A;&#x4E86;&#x66F4;&#x65B9;&#x4FBF;&#x7684;&#x5206;&#x6790;&#xFF0C;&#x4FEE;&#x6539;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x4EE5;&#x8FDB;&#x4E00;&#x6B65;&#x7684; hook APP &#x7684;&#x4EA4;&#x4E92;&#x7684;&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x3002;&#x4F8B;&#x5982;&#x901A;&#x8FC7; APP &#x5BF9;&#x667A;&#x80FD;&#x8BBE;&#x5907;&#x65F6;&#x95F4;&#x8BBE;&#x7F6E;&#x3002;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b388656a6ecd.png" alt=""></p>
+<p>&#x9006;&#x5411;&#x5206;&#x6790;&#x83B7;&#x53D6;&#x667A;&#x80FD;&#x8BBE;&#x5907;&#x65F6;&#x95F4;&#x4EE3;&#x7801;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> DateTimeInfo <span class="hljs-title">getDateTimeServerEX</span><span class="hljs-params">(String strIP, <span class="hljs-keyword">int</span> nPort, LoginHandle loginHandle, <span class="hljs-keyword">int</span> nDeviceID)</span> </span>{
+    OutputStream writer = <span class="hljs-keyword">null</span>;
+    InputStream reader = <span class="hljs-keyword">null</span>;
+    DateTimeInfo dateTimeHandler = <span class="hljs-keyword">new</span> DateTimeInfo();
+    dateTimeHandler.setnResult(ResultCode.RESULT_CODE_FAIL_SERVER_CONNECT_FAIL);
+    System.out.println(<span class="hljs-string">&quot;get server IP:&quot;</span> + strIP + <span class="hljs-string">&quot; Port: &quot;</span> + nPort);
+    Socket sSocket = Functions.connectToServer(strIP, nPort, Defines.CMD_MR_WAIT);
+    <span class="hljs-keyword">if</span> (sSocket != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">boolean</span> isConnectOK;
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-keyword">if</span> (sSocket.isConnected()) {
+                writer = sSocket.getOutputStream();
+                reader = sSocket.getInputStream();
+                isConnectOK = <span class="hljs-keyword">true</span>;
+                <span class="hljs-keyword">if</span> (isConnectOK) {
+                    Arrays.fill(buffer_EX, (<span class="hljs-keyword">byte</span>) <span class="hljs-number">0</span>);  <span class="hljs-comment">//&#x6570;&#x636E;&#x5305;&#x586B;&#x5145;0 </span>
+                    Functions.IntToBytes((<span class="hljs-keyword">long</span>) <span class="hljs-number">315</span>, buffer_EX, <span class="hljs-number">0</span>);  <span class="hljs-comment">//&#x83B7;&#x53D6;&#x65F6;&#x95F4;&#x7684;&#x6307;&#x4EE4;</span>
+                    Functions.IntToBytes((<span class="hljs-keyword">long</span>) nDeviceID, buffer_EX, <span class="hljs-number">4</span>); <span class="hljs-comment">//&#x8BBE;&#x5907;&#x7684;id</span>
+                    buffer_EX[<span class="hljs-number">8</span>] = (<span class="hljs-keyword">byte</span>) <span class="hljs-number">1</span>;
+                    Functions.IntToBytes(loginHandle.getlHandle(), buffer_EX, <span class="hljs-number">9</span>); <span class="hljs-comment">//&#x767B;&#x9646;&#x6807;&#x8BC6;</span>
+                    <span class="hljs-keyword">try</span> {
+                        writer.write(buffer_EX, <span class="hljs-number">0</span>, <span class="hljs-number">256</span>);  <span class="hljs-comment">//&#x53D1;&#x9001;&#x6570;&#x636E;</span>
+                        writer.flush();
+                    } <span class="hljs-keyword">catch</span> (IOException e) {
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x5F88;&#x6E05;&#x6670;&#x7684;&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x6307;&#x4EE4;&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x5404;&#x4E2A;&#x90E8;&#x5206;&#x7684;&#x610F;&#x4E49;&#x3002;hook &#x66F4;&#x591A;&#x7684;&#x7C7B;&#x6765;&#x83B7;&#x53D6;&#x66F4;&#x7EC6;&#x8282;&#x5316;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x4F8B;&#x5982; hook &#x83B7;&#x53D6;&#x65F6;&#x95F4;&#x548C;&#x8BBE;&#x7F6E;&#x65F6;&#x95F4;</p>
+<pre><code class="lang-js">  h2= Java.use(<span class="hljs-string">&quot;com.xxx.sdk.setting.DeviceDateTimeSettingEX&quot;</span>);
+  h2.getDateTimeServerEX.implementation = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a1,a2,a3,a4</span>)</span>{
+
+   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;[*] hook DeviceDateTimeSettingEX:getDateTimeServerEX&apos;</span>);
+   <span class="hljs-built_in">console</span>.log(a1,a2,a3,a4);
+   <span class="hljs-keyword">return</span>  <span class="hljs-keyword">this</span>.getDateTimeServerEX(a1,a2,a3,a4);
+
+  }
+
+ h2.setDateTimeServerEX.implementation = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a1,a2,a3,a4,a5,a6,a7,a8,a9</span>)</span>{
+
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;[*] hook DeviceDateTimeSettingEX:setDateTimeServerEX&apos;</span>);
+  <span class="hljs-built_in">console</span>.log(a1,a2,a3,a4,a5,a6,a7,a8,a9);
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.setDateTimeServerEX(a1,a2,a3,a4,a5,a6,a7,a8,a9);
+
+ }
+</code></pre>
+<p>&#x7ED3;&#x679C;</p>
+<p><img src="https://img-1253984064.cos.ap-guangzhou.myqcloud.com/5b388950cb3de.jpg" alt=""></p>
+<h2 id="&#x5206;&#x6790;">&#x5206;&#x6790;</h2>
+<p>&#x5E38;&#x89C1;&#x7684;&#x534F;&#x8BAE;&#x4F8B;&#x5982;&#x89C6;&#x9891;&#x6D41;&#xFF0C;&#x97F3;&#x9891;&#x6D41;&#x7684;&#x8BC6;&#x522B;&#xFF0C;&#x4EE5;&#x53CA;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x534F;&#x8BAE;&#x7684;&#x5206;&#x6790;&#x3002;</p>
+<h2 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h2>
+<p>&#x5BF9;&#x6570;&#x636E;&#x7684;&#x5206;&#x6790;&#xFF0C;&#x91CD;&#x653E;&#xFF0C;&#x4FEE;&#x6539; &#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 2.4 协议分析">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="USB.html" class="navigation navigation-next " aria-label="Next page: 2.4.2 USB">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.4.1 网络","level":"1.3.4.1","depth":3,"next":{"title":"2.4.2 USB","level":"1.3.4.2","depth":3,"path":"hardware-security/protocol/USB.md","ref":"hardware-security/protocol/USB.md","articles":[]},"previous":{"title":"2.4 协议分析","level":"1.3.4","depth":2,"path":"hardware-security/protocol/index.md","ref":"hardware-security/protocol/index.md","articles":[{"title":"2.4.1 网络","level":"1.3.4.1","depth":3,"path":"hardware-security/protocol/network.md","ref":"hardware-security/protocol/network.md","articles":[]},{"title":"2.4.2 USB","level":"1.3.4.2","depth":3,"path":"hardware-security/protocol/USB.md","ref":"hardware-security/protocol/USB.md","articles":[]},{"title":"2.4.3 其他","level":"1.3.4.3","depth":3,"path":"hardware-security/protocol/others.md","ref":"hardware-security/protocol/others.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","-livereload","image-captions","github","editlink","favicon","baidu","easyseo-7dtime"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/yaseng/iot-security-wiki"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/yaseng/iot-security-wiki/blob/master/"},"search":{},"easyseo-7dtime":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"_assets/images/favicon.ico","bookmark":"_assets/images/favicon.ico","appleTouch":"_assets/images/favicon.ico"},"baidu":{"token":"aaaa"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"attributes":{"width":"600"},"caption":"图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Yaseng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"title":"物联网安全百科","language":"zh-hans","links":{"sidebar":{"物联网安全百科":"http://iot-security.wiki"}},"gitbook":"*","description":"物联网安全开源图书","theme-default":{"showLevel":true}},"file":{"path":"hardware-security/protocol/network.md","mtime":"2018-07-05T18:47:10.809Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-05T19:01:55.530Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

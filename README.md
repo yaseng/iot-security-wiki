@@ -15,20 +15,22 @@
  * 项目地址：[github.com/yaseng/iot-security-wiki](https://github.com/yaseng/iot-security-wiki)
  * 下载：[pdf](),[epub]()
 
- 
+
 ## 技术交流
 
-| 名称|  IOT Security Wiki 0.1| 
+| 名称|  IOT Security Wiki 0.1|
 |--------- | ------------- |
-|本书地址 |  [iot-security.wiki](https://iot-security.wiki)| 
-|伏宸安全实验 |  [future-sec.com](https://future-sec.com)|
+|本书地址 |  [iot-security.wiki](https://iot-security.wiki)|
+|伏宸安全实验室 |  [future-sec.com](https://future-sec.com)|
 |IOT Security |   [iot-security.org](https://iot-security.org)|
-| Yaseng Blog | [yaseng.org](https://www.yaseng.org)| 
-| 知乎专栏|  [zhuanlan.zhihu.com](https://zhuanlan.zhihu.com/future-sec) | 
+| Yaseng Blog | [yaseng.org](https://www.yaseng.org)|
+| 知乎专栏|  [zhuanlan.zhihu.com](https://zhuanlan.zhihu.com/future-sec) |
 | 邮箱 | info@iot-security.wiki |
 | qq 交流群|  306482276 |
 | 微信公众号| ![](https://img-1253984064.cos.ap-guangzhou.myqcloud.com/future-sec-qrcode.jpg)|
-| 微信交流群| ![](https://img-1253984064.cos.ap-guangzhou.myqcloud.com/wechat7-6.jpg)|
+| 微信交流群| ![](https://img-1253984064.cos.ap-guangzhou.myqcloud.com/wechat.jpg)|
+
+
 
 ## 参与
 
