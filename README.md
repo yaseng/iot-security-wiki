@@ -23,7 +23,7 @@
 |本书地址 |  [iot-security.wiki](https://iot-security.wiki)|
 |伏宸安全实验室 |  [future-sec.com](https://future-sec.com)|
 |IOT Security |   [iot-security.org](https://iot-security.org)|
-| Yaseng Blog | [yaseng.org](https://www.yaseng.org)|
+| Yaseng Blog | [yaseng.org](https://yaseng.org)|
 | 知乎专栏|  [zhuanlan.zhihu.com](https://zhuanlan.zhihu.com/future-sec) |
 | 邮箱 | info@iot-security.wiki |
 | qq 交流群|  306482276 |
